@@ -31,6 +31,8 @@
   </tbody>
 </table>
 
+<br clear="all">
+
 <h2 dir="rtl" align="right">قواعد نام‌گذاری</h2>
 
 <ul dir="rtl" align="right">
