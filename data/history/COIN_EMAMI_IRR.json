@@ -53682,7 +53682,7 @@
     "count": 4127,
     "next_cursor": null,
     "published_at": "2026-10-02T11:00:01.431Z",
-    "update_frequency_minutes": 30,
+    "update_frequency_minutes": 1440,
     "public_file": "https://iran-market.github.io/data/history/COIN_EMAMI_IRR.json",
     "currency": "IRT"
   }
