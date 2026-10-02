@@ -1,0 +1,8 @@
+# The publisher runs on the server but its source, credentials and PM2 config are private.
+.private/
+.env
+.env.*
+!.env.example
+node_modules/
+*.log
+.DS_Store

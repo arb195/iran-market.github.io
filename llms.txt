@@ -1,0 +1,14 @@
+# Iran Market Data
+
+Public, no-auth JSON files for current and historical Iranian market prices.
+
+- Website and documentation: https://iran-market.github.io/
+- All latest prices in toman: https://iran-market.github.io/data/latest-toman.json
+- Curated popular prices: https://iran-market.github.io/data/popular.json
+- USD/IRR daily OHLC history: https://iran-market.github.io/data/history/USD_IRR_FREE.json
+- Gold 18K/IRR daily OHLC history: https://iran-market.github.io/data/history/GOLD_18K_IRR.json
+- Emami coin/IRR daily OHLC history: https://iran-market.github.io/data/history/COIN_EMAMI_IRR.json
+- USDT/IRR daily OHLC history: https://iran-market.github.io/data/history/USDT_IRR.json
+- Manifest and update metadata: https://iran-market.github.io/data/manifest.json
+
+Files update every 30 minutes. Current upstream source: TGJU. Prices are informational.

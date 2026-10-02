@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-02T01:20:44.522Z",
+  "update_frequency_minutes": 30,
+  "source": "Iran Market API Core / TGJU",
+  "license_note": "Market data belongs to its original providers; verify before financial use.",
+  "files": [
+    {
+      "path": "latest.json",
+      "url": "https://iran-market.github.io/data/latest.json",
+      "description": "All latest quotes in Iranian rial",
+      "records": 955,
+      "unit": "rial"
+    },
+    {
+      "path": "latest-toman.json",
+      "url": "https://iran-market.github.io/data/latest-toman.json",
+      "description": "All latest quotes in Iranian toman",
+      "records": 955,
+      "unit": "toman"
+    },
+    {
+      "path": "popular.json",
+      "url": "https://iran-market.github.io/data/popular.json",
+      "description": "Popular USD, EUR, GBP, gold, coin and USDT quotes in toman",
+      "records": 6,
+      "unit": "toman"
+    },
+    {
+      "path": "history/USD_IRR_FREE.json",
+      "url": "https://iran-market.github.io/data/history/USD_IRR_FREE.json",
+      "description": "Daily OHLC history for USD_IRR_FREE in toman",
+      "records": 3966,
+      "unit": "toman"
+    },
+    {
+      "path": "history/GOLD_18K_IRR.json",
+      "url": "https://iran-market.github.io/data/history/GOLD_18K_IRR.json",
+      "description": "Daily OHLC history for GOLD_18K_IRR in toman",
+      "records": 3518,
+      "unit": "toman"
+    },
+    {
+      "path": "history/COIN_EMAMI_IRR.json",
+      "url": "https://iran-market.github.io/data/history/COIN_EMAMI_IRR.json",
+      "description": "Daily OHLC history for COIN_EMAMI_IRR in toman",
+      "records": 4127,
+      "unit": "toman"
+    },
+    {
+      "path": "history/USDT_IRR.json",
+      "url": "https://iran-market.github.io/data/history/USDT_IRR.json",
+      "description": "Daily OHLC history for USDT_IRR in toman",
+      "records": 46,
+      "unit": "toman"
+    }
+  ]
+}

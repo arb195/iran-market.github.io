@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API رایگان قیمت دلار، طلا و سکه | Iran Market Data</title>
+    <meta
+      name="description"
+      content="API و فایل JSON رایگان قیمت لحظه‌ای دلار، طلا، سکه، تتر و تاریخچه بازار ایران؛ بدون ثبت‌نام و مناسب JavaScript، Python و اپلیکیشن‌ها."
+    />
+    <meta
+      name="keywords"
+      content="API رایگان قیمت دلار, API قیمت طلا, قیمت لحظه ای سکه, JSON قیمت ارز, تاریخچه قیمت دلار, Iran market API, free currency API Iran, TGJU API"
+    />
+    <meta name="author" content="Iran Market" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="theme-color" content="#08110f" />
+    <link rel="canonical" href="https://iran-market.github.io/" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:title" content="دادهٔ رایگان بازار ایران؛ دلار، طلا، سکه و تاریخچه" />
+    <meta
+      property="og:description"
+      content="فایل‌های JSON رایگان و آمادهٔ استفاده برای توسعه‌دهندگان، با به‌روزرسانی خودکار هر ۳۰ دقیقه."
+    />
+    <meta property="og:url" content="https://iran-market.github.io/" />
+    <meta property="og:site_name" content="Iran Market Data" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "Iran Market Data",
+        "alternateName": "API رایگان قیمت دلار و طلا",
+        "description": "قیمت لحظه‌ای و تاریخچه دلار، طلا، سکه و ارزهای دیجیتال بازار ایران در قالب JSON",
+        "url": "https://iran-market.github.io/",
+        "license": "https://opensource.org/license/mit",
+        "creator": { "@type": "Organization", "name": "Iran Market" },
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "application/json",
+            "contentUrl": "https://iran-market.github.io/data/latest-toman.json"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "application/json",
+            "contentUrl": "https://iran-market.github.io/data/history/USD_IRR_FREE.json"
+          }
+        ],
+        "temporalCoverage": "2011/..",
+        "inLanguage": ["fa", "en"]
+      }
+    </script>
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <header class="topbar shell">
+      <a class="brand" href="#top" aria-label="Iran Market Data">
+        <span class="brand-mark" aria-hidden="true">IM</span>
+        <span><b>Iran Market</b><small>Open market data</small></span>
+      </a>
+      <nav aria-label="منوی اصلی">
+        <a href="#prices">قیمت‌ها</a>
+        <a href="#history">تاریخچه</a>
+        <a href="#docs">راهنما</a>
+        <a class="github-link" href="https://github.com/iran-market/iran-market.github.io">GitHub ↗</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> دادهٔ باز برای توسعه‌دهندگان</div>
+          <h1>قیمت بازار ایران،<br /><em>آمادهٔ استفاده.</em></h1>
+          <p>
+            دلار، طلا، سکه و رمزارزها را با یک درخواست سادهٔ JSON دریافت کنید؛ رایگان، بدون
+            ثبت‌نام و با تاریخچهٔ روزانه.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#docs">شروع سریع</a>
+            <a class="button ghost" href="data/latest-toman.json">مشاهده JSON</a>
+          </div>
+          <div class="freshness" id="freshness" role="status">
+            <span class="pulse"></span>
+            <span>در حال دریافت آخرین داده…</span>
+          </div>
+        </div>
+        <div class="terminal-card" aria-label="نمونه استفاده از API رایگان">
+          <div class="terminal-head">
+            <span></span><span></span><span></span>
+            <b>fetch-market.js</b>
+          </div>
+          <pre><code><span class="code-purple">const</span> res = <span class="code-purple">await</span> fetch(
+  <span class="code-green">'https://iran-market.github.io/
+   data/popular.json'</span>
+);
+
+<span class="code-purple">const</span> { data } = <span class="code-purple">await</span> res.json();
+<span class="code-purple">const</span> usd = data.find(
+  item => item.symbol === <span class="code-green">'USD_IRR_FREE'</span>
+);
+
+console.log(usd.price); <span class="code-comment">// تومان</span></code></pre>
+          <button class="copy-code" data-copy="https://iran-market.github.io/data/popular.json">کپی لینک فایل</button>
+        </div>
+      </section>
+
+      <section class="stats-strip" aria-label="ویژگی‌های سرویس">
+        <div class="shell stats-grid">
+          <div><strong id="instrument-count">+۹۰۰</strong><span>نماد بازار</span></div>
+          <div><strong>۳۰ دقیقه</strong><span>فاصلهٔ بروزرسانی</span></div>
+          <div><strong>JSON</strong><span>بدون کلید API</span></div>
+          <div><strong>رایگان</strong><span>مناسب پروژه‌های عمومی</span></div>
+        </div>
+      </section>
+
+      <section class="section shell" id="prices">
+        <div class="section-heading">
+          <div><span class="kicker">MARKET PULSE</span><h2>نبض بازار در یک نگاه</h2></div>
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input id="market-search" type="search" placeholder="جست‌وجوی دلار، طلا، تتر…" autocomplete="off" />
+          </label>
+        </div>
+        <div class="tabs" role="tablist" aria-label="دسته بازار">
+          <button class="tab active" data-category="popular" role="tab">منتخب</button>
+          <button class="tab" data-category="currency" role="tab">ارز</button>
+          <button class="tab" data-category="gold" role="tab">طلا و سکه</button>
+          <button class="tab" data-category="crypto" role="tab">رمزارز</button>
+        </div>
+        <div class="market-grid" id="market-grid" aria-live="polite">
+          <div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>
+        </div>
+        <div class="section-foot">
+          <span id="result-count">در حال بارگذاری…</span>
+          <a href="data/latest-toman.json">دریافت همهٔ قیمت‌ها ←</a>
+        </div>
+      </section>
+
+      <section class="section history-section" id="history">
+        <div class="shell">
+          <div class="section-heading">
+            <div><span class="kicker">HISTORICAL DATA</span><h2>تاریخچه‌ای که آمادهٔ تحلیل است</h2></div>
+            <select id="history-symbol" aria-label="انتخاب نمودار تاریخچه">
+              <option value="USD_IRR_FREE">دلار آزاد</option>
+              <option value="GOLD_18K_IRR">طلای ۱۸ عیار</option>
+              <option value="COIN_EMAMI_IRR">سکه امامی</option>
+              <option value="USDT_IRR">تتر</option>
+            </select>
+          </div>
+          <div class="chart-card">
+            <div class="chart-meta">
+              <div><span id="chart-name">دلار آزاد</span><strong id="chart-price">—</strong></div>
+              <div class="chart-range"><button data-range="90">۳ ماه</button><button data-range="365" class="active">۱ سال</button><button data-range="all">همه</button></div>
+            </div>
+            <div class="chart-wrap"><canvas id="history-chart" role="img" aria-label="نمودار تاریخچه قیمت"></canvas><div id="chart-tooltip"></div></div>
+            <div class="chart-axis"><span id="chart-start">—</span><span id="chart-end">—</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell" id="docs">
+        <div class="section-heading docs-heading">
+          <div><span class="kicker">ZERO AUTH · CORS READY</span><h2>از صفر تا داده در چند خط</h2></div>
+          <p>فایل‌ها UTF-8، عمومی و قابل استفاده در مرورگر، Node.js، Python، PHP و موبایل هستند.</p>
+        </div>
+        <div class="docs-layout">
+          <aside class="endpoint-list" aria-label="فایل‌های قابل دریافت">
+            <button class="endpoint active" data-endpoint="popular"><b>قیمت‌های منتخب</b><code>/data/popular.json</code></button>
+            <button class="endpoint" data-endpoint="latest"><b>همه قیمت‌ها</b><code>/data/latest-toman.json</code></button>
+            <button class="endpoint" data-endpoint="usd"><b>تاریخچه دلار</b><code>/data/history/USD_IRR_FREE.json</code></button>
+            <button class="endpoint" data-endpoint="gold"><b>تاریخچه طلا</b><code>/data/history/GOLD_18K_IRR.json</code></button>
+          </aside>
+          <div class="code-panel">
+            <div class="language-tabs"><button class="active" data-lang="js">JavaScript</button><button data-lang="python">Python</button><button data-lang="curl">cURL</button></div>
+            <pre><code id="usage-code"></code></pre>
+            <button class="copy-code" id="copy-usage">کپی کد</button>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <article><span>01</span><h3>ساختار پایدار</h3><p>نمادهای canonical و فیلدهای مشخص؛ مناسب cache، نمودار و تحلیل.</p></article>
+          <article><span>02</span><h3>زمان فارسی و UTC</h3><p>timestamp استاندارد در کنار تاریخ و ساعت تهران و تاریخ جلالی.</p></article>
+          <article><span>03</span><h3>تاریخچهٔ OHLC</h3><p>کندل روزانه با open، high، low و close؛ مرتب‌شده برای پردازش مستقیم.</p></article>
+        </div>
+      </section>
+
+      <section class="seo-copy shell">
+        <h2>API رایگان قیمت دلار و بازار ایران برای برنامه‌نویسان</h2>
+        <p>
+          Iran Market Data راهی ساده برای دریافت قیمت لحظه‌ای دلار آزاد، طلای ۱۸ عیار، سکه
+          امامی، تتر و صدها نماد دیگر است. به‌جای scraping و نگه‌داری crawler، فایل JSON آماده را
+          مستقیماً در وب‌سایت، ربات، داشبورد یا پروژهٔ دانشگاهی خود مصرف کنید. تاریخچهٔ قیمت‌ها نیز
+          برای رسم نمودار، تحلیل روند و بک‌تست در دسترس است.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="shell footer-grid">
+        <div class="brand"><span class="brand-mark">IM</span><span><b>Iran Market</b><small>Free & open JSON data</small></span></div>
+        <p>داده‌ها صرفاً جهت اطلاع‌رسانی‌اند و توصیهٔ خرید یا فروش نیستند.</p>
+        <div><a href="https://github.com/iran-market/iran-market.github.io">GitHub</a><a href="https://imapi.cloudflarezone.net/docs">Core API</a></div>
+      </div>
+    </footer>
+    <div class="toast" id="toast" role="status">کپی شد</div>
+    <script src="assets/app.js" defer></script>
+  </body>
+</html>
