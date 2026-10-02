@@ -593,7 +593,7 @@
       "low": 256901,
       "close": 256901,
       "volume": null,
-      "ticks": 512,
+      "ticks": 632,
       "origin": "derived",
       "quality": [
         "spike"
@@ -608,7 +608,7 @@
     "unit": "toman",
     "count": 46,
     "next_cursor": null,
-    "published_at": "2026-10-02T02:30:01.550Z",
+    "published_at": "2026-10-02T03:00:01.300Z",
     "update_frequency_minutes": 30,
     "public_file": "https://iran-market.github.io/data/history/USDT_IRR.json",
     "upstream": "Iran Market API Core / TGJU"
