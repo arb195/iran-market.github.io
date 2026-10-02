@@ -5,7 +5,7 @@
   <p>
     <a href="https://iran-market.github.io/"><img alt="وب‌سایت Iran Market Data" src="https://img.shields.io/badge/Website-Live-0f766e"></a>
     <a href="https://iran-market.github.io/data/latest-toman.json"><img alt="قیمت‌ها هر ۳۰ دقیقه به‌روزرسانی می‌شوند" src="https://img.shields.io/badge/Prices-Every_30_Min-2563eb"></a>
-    <a href="https://iran-market.github.io/data/history/index.json"><img alt="۵۸ فایل تاریخچه روزانه" src="https://img.shields.io/badge/History-58_Symbols-f59e0b"></a>
+    <a href="https://iran-market.github.io/data/history/index.json"><img alt="۱۲۸ فایل تاریخچه روزانه" src="https://img.shields.io/badge/History-128_Symbols-f59e0b"></a>
     <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/License-MIT-111827"></a>
   </p>
 </div>
@@ -15,7 +15,7 @@
 </p>
 
 <p dir="rtl" align="right">
-در خروجی فعلی، <strong>۱٬۳۵۰ شناسهٔ canonical</strong>، <strong>۹۵۵ نماد دارای قیمت فعلی</strong> و <strong>۵۸ فایل تاریخچهٔ OHLC روزانه</strong> منتشر می‌شود. اعداد زنده و قابل اتکا همیشه در <a href="data/symbols.json"><code>data/symbols.json</code></a> و <a href="data/history/index.json"><code>data/history/index.json</code></a> قرار دارند.
+در خروجی فعلی، <strong>۱٬۳۵۰ شناسهٔ canonical</strong>، <strong>۹۵۵ نماد دارای قیمت فعلی</strong> و <strong>۱۲۸ فایل تاریخچهٔ OHLC روزانه</strong> منتشر می‌شود. اعداد زنده و قابل اتکا همیشه در <a href="data/symbols.json"><code>data/symbols.json</code></a> و <a href="data/history/index.json"><code>data/history/index.json</code></a> قرار دارند.
 </p>
 
 <p align="center">
@@ -256,12 +256,13 @@ console.log(history.meta.currency, history.data.at(-1));
 <table dir="rtl" align="right">
   <thead><tr><th align="right">دسته</th><th align="right">تعداد فایل</th><th align="right">نمونه‌ها</th></tr></thead>
   <tbody>
-    <tr><td>ارز آزاد</td><td>۱۰</td><td>دلار، یورو، پوند، درهم، لیر و…</td></tr>
-    <tr><td>طلا و فلزات گران‌بها</td><td>۹</td><td>طلای ۱۸ و ۲۴ عیار، انس طلا، نقره، پلاتین و…</td></tr>
-    <tr><td>سکه</td><td>۵</td><td>امامی، بهار آزادی، نیم، ربع و گرمی</td></tr>
-    <tr><td>رمزارز</td><td>۱۰</td><td>تتر، بیت‌کوین، اتریوم، سولانا و…</td></tr>
-    <tr><td>انرژی</td><td>۵</td><td>نفت برنت، گاز طبیعی، سبد اوپک و…</td></tr>
-    <tr><td>کالا و فلز صنعتی</td><td>۱۹</td><td>قهوه، کاکائو، گندم، برنج، مس، آلومینیوم و…</td></tr>
+    <tr><td>ارز آزاد</td><td>۲۵</td><td>دلار، یورو، پوند، درهم، لیر، ارزهای منطقه‌ای و…</td></tr>
+    <tr><td>طلا و فلزات گران‌بها</td><td>۱۶</td><td>طلای ۱۸ و ۲۴ عیار، آب‌شده، انس طلا، نقره و…</td></tr>
+    <tr><td>سکه</td><td>۱۵</td><td>بازار، تک‌فروشی و حباب انواع سکه</td></tr>
+    <tr><td>رمزارز</td><td>۳۲</td><td>جفت‌های دلاری و ریالی بیت‌کوین، تتر، سولانا و…</td></tr>
+    <tr><td>انرژی</td><td>۶</td><td>نفت برنت، گاز طبیعی، بنزین، سبد اوپک و…</td></tr>
+    <tr><td>کالا و فلز صنعتی</td><td>۲۸</td><td>قهوه، کاکائو، گندم، دام، مس، فولاد و…</td></tr>
+    <tr><td>جفت‌ارز جهانی</td><td>۶</td><td>EUR/USD، GBP/USD، USD/JPY و…</td></tr>
   </tbody>
 </table>
 

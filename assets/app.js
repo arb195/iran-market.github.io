@@ -337,7 +337,7 @@ async function loadHistoryDirectory() {
   try {
     const payload = await json(`${DATA_ROOT}/history/index.json`);
     state.historyDirectory = [...(payload.data ?? [])].sort((a, b) => {
-      const categoryOrder = ['currency', 'gold', 'coin', 'precious_metal', 'crypto', 'energy', 'commodity'];
+      const categoryOrder = ['currency', 'gold', 'coin', 'precious_metal', 'crypto', 'energy', 'commodity', 'index'];
       const categoryDiff = categoryOrder.indexOf(a.category) - categoryOrder.indexOf(b.category);
       return categoryDiff || historyLabel(a.symbol).localeCompare(historyLabel(b.symbol), 'fa');
     });
