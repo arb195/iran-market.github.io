@@ -27,6 +27,7 @@ const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 const faNumber = new Intl.NumberFormat('fa-IR', { maximumFractionDigits: 2 });
 const faDateTime = new Intl.DateTimeFormat('fa-IR', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'Asia/Tehran' });
 const escapeHtml = (value) => String(value ?? '').replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[char]);
+const iconSvg = (name) => `<svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-${name}"></use></svg>`;
 
 async function json(path) {
   const response = await fetch(path, { cache: 'no-store' });
@@ -40,7 +41,7 @@ function flattenSnapshot(payload) {
 
 function showToast(message = 'کپی شد') {
   const toast = $('#toast');
-  toast.textContent = message;
+  toast.querySelector('span').textContent = message;
   toast.classList.add('show');
   clearTimeout(showToast.timer);
   showToast.timer = setTimeout(() => toast.classList.remove('show'), 1700);
@@ -167,10 +168,10 @@ function symbolRow(item) {
   const name = item.name_fa || item.name_en;
   const unit = item.currency === 'IRR' ? 'ریال' : item.currency;
   const latest = item.has_latest
-    ? '<a class="data-badge live" href="data/latest.json">قیمت فعلی</a>'
-    : '<span class="data-badge muted">بدون قیمت فعلی</span>';
+    ? `<a class="data-badge live" href="data/latest.json">${iconSvg('activity')}قیمت فعلی</a>`
+    : `<span class="data-badge muted">${iconSvg('circle-x')}بدون قیمت فعلی</span>`;
   const history = item.history_file
-    ? ` <a class="data-badge history" href="data/${escapeHtml(item.history_file)}">تاریخچه</a>`
+    ? ` <a class="data-badge history" href="data/${escapeHtml(item.history_file)}">${iconSvg('history')}تاریخچه</a>`
     : '';
   return `<tr>
     <td><code>${escapeHtml(item.symbol)}</code></td>
