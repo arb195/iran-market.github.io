@@ -27,6 +27,8 @@
   </tbody>
 </table>
 
+<br clear="all">
+
 <p dir="rtl" align="right">برای تازه‌ترین نسخه از GitHub Pages استفاده کنید؛ CDN ممکن است چند دقیقه cache داشته باشد.</p>
 
 <h2 dir="rtl" align="right">راهنمای شناسه‌ها</h2>
