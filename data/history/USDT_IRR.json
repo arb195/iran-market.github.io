@@ -26860,6 +26860,7 @@
     "next_cursor": null,
     "published_at": "2026-10-02T11:00:01.431Z",
     "update_frequency_minutes": 30,
-    "public_file": "https://iran-market.github.io/data/history/USDT_IRR.json"
+    "public_file": "https://iran-market.github.io/data/history/USDT_IRR.json",
+    "currency": "IRT"
   }
 }
