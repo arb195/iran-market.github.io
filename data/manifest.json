@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-02T11:30:01.351Z",
+  "generated_at": "2026-10-02T11:34:49.702Z",
   "update_frequency_minutes": 30,
   "source": "TGJU",
   "license_note": "Market data belongs to its original providers; verify before financial use.",
@@ -37,7 +37,7 @@
       "path": "history/index.json",
       "url": "https://iran-market.github.io/data/history/index.json",
       "description": "Directory of published daily OHLC history files",
-      "records": 58,
+      "records": 95,
       "unit": null
     },
     {
@@ -108,6 +108,111 @@
       "url": "https://iran-market.github.io/data/history/IQD_IRR_FREE.json",
       "description": "Daily OHLC history for IQD_IRR_FREE",
       "records": 2838,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/AUD_IRR_FREE.json",
+      "url": "https://iran-market.github.io/data/history/AUD_IRR_FREE.json",
+      "description": "Daily OHLC history for AUD_IRR_FREE",
+      "records": 3223,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/SGD_IRR_FREE.json",
+      "url": "https://iran-market.github.io/data/history/SGD_IRR_FREE.json",
+      "description": "Daily OHLC history for SGD_IRR_FREE",
+      "records": 3327,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/NZD_IRR_FREE.json",
+      "url": "https://iran-market.github.io/data/history/NZD_IRR_FREE.json",
+      "description": "Daily OHLC history for NZD_IRR_FREE",
+      "records": 3320,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/HKD_IRR_FREE.json",
+      "url": "https://iran-market.github.io/data/history/HKD_IRR_FREE.json",
+      "description": "Daily OHLC history for HKD_IRR_FREE",
+      "records": 3307,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/AFN_IRR_FREE.json",
+      "url": "https://iran-market.github.io/data/history/AFN_IRR_FREE.json",
+      "description": "Daily OHLC history for AFN_IRR_FREE",
+      "records": 3280,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/PKR_IRR_FREE.json",
+      "url": "https://iran-market.github.io/data/history/PKR_IRR_FREE.json",
+      "description": "Daily OHLC history for PKR_IRR_FREE",
+      "records": 3280,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/RUB_IRR_FREE.json",
+      "url": "https://iran-market.github.io/data/history/RUB_IRR_FREE.json",
+      "description": "Daily OHLC history for RUB_IRR_FREE",
+      "records": 3249,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/INR_IRR_FREE.json",
+      "url": "https://iran-market.github.io/data/history/INR_IRR_FREE.json",
+      "description": "Daily OHLC history for INR_IRR_FREE",
+      "records": 3235,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/SAR_IRR_FREE.json",
+      "url": "https://iran-market.github.io/data/history/SAR_IRR_FREE.json",
+      "description": "Daily OHLC history for SAR_IRR_FREE",
+      "records": 3233,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/QAR_IRR_FREE.json",
+      "url": "https://iran-market.github.io/data/history/QAR_IRR_FREE.json",
+      "description": "Daily OHLC history for QAR_IRR_FREE",
+      "records": 3231,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/BHD_IRR_FREE.json",
+      "url": "https://iran-market.github.io/data/history/BHD_IRR_FREE.json",
+      "description": "Daily OHLC history for BHD_IRR_FREE",
+      "records": 3229,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/AZN_IRR_FREE.json",
+      "url": "https://iran-market.github.io/data/history/AZN_IRR_FREE.json",
+      "description": "Daily OHLC history for AZN_IRR_FREE",
+      "records": 3225,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/OMR_IRR_FREE.json",
+      "url": "https://iran-market.github.io/data/history/OMR_IRR_FREE.json",
+      "description": "Daily OHLC history for OMR_IRR_FREE",
+      "records": 3221,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/KWD_IRR_FREE.json",
+      "url": "https://iran-market.github.io/data/history/KWD_IRR_FREE.json",
+      "description": "Daily OHLC history for KWD_IRR_FREE",
+      "records": 3218,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/NOK_IRR_FREE.json",
+      "url": "https://iran-market.github.io/data/history/NOK_IRR_FREE.json",
+      "description": "Daily OHLC history for NOK_IRR_FREE",
+      "records": 3178,
       "unit": "IRT"
     },
     {
@@ -209,6 +314,125 @@
       "unit": "IRT"
     },
     {
+      "path": "history/COIN_EMAMI_RETAIL_IRR.json",
+      "url": "https://iran-market.github.io/data/history/COIN_EMAMI_RETAIL_IRR.json",
+      "description": "Daily OHLC history for COIN_EMAMI_RETAIL_IRR",
+      "records": 2376,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/COIN_BAHAR_RETAIL_IRR.json",
+      "url": "https://iran-market.github.io/data/history/COIN_BAHAR_RETAIL_IRR.json",
+      "description": "Daily OHLC history for COIN_BAHAR_RETAIL_IRR",
+      "records": 2352,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/COIN_HALF_RETAIL_IRR.json",
+      "url": "https://iran-market.github.io/data/history/COIN_HALF_RETAIL_IRR.json",
+      "description": "Daily OHLC history for COIN_HALF_RETAIL_IRR",
+      "records": 2306,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/COIN_QUARTER_RETAIL_IRR.json",
+      "url": "https://iran-market.github.io/data/history/COIN_QUARTER_RETAIL_IRR.json",
+      "description": "Daily OHLC history for COIN_QUARTER_RETAIL_IRR",
+      "records": 2294,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/COIN_GRAMI_RETAIL_IRR.json",
+      "url": "https://iran-market.github.io/data/history/COIN_GRAMI_RETAIL_IRR.json",
+      "description": "Daily OHLC history for COIN_GRAMI_RETAIL_IRR",
+      "records": 2261,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/COIN_EMAMI_BUBBLE_IRR.json",
+      "url": "https://iran-market.github.io/data/history/COIN_EMAMI_BUBBLE_IRR.json",
+      "description": "Daily OHLC history for COIN_EMAMI_BUBBLE_IRR",
+      "records": 1996,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/COIN_BAHAR_BUBBLE_IRR.json",
+      "url": "https://iran-market.github.io/data/history/COIN_BAHAR_BUBBLE_IRR.json",
+      "description": "Daily OHLC history for COIN_BAHAR_BUBBLE_IRR",
+      "records": 1967,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/COIN_HALF_BUBBLE_IRR.json",
+      "url": "https://iran-market.github.io/data/history/COIN_HALF_BUBBLE_IRR.json",
+      "description": "Daily OHLC history for COIN_HALF_BUBBLE_IRR",
+      "records": 1965,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/COIN_QUARTER_BUBBLE_IRR.json",
+      "url": "https://iran-market.github.io/data/history/COIN_QUARTER_BUBBLE_IRR.json",
+      "description": "Daily OHLC history for COIN_QUARTER_BUBBLE_IRR",
+      "records": 1966,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/COIN_GRAMI_BUBBLE_IRR.json",
+      "url": "https://iran-market.github.io/data/history/COIN_GRAMI_BUBBLE_IRR.json",
+      "description": "Daily OHLC history for COIN_GRAMI_BUBBLE_IRR",
+      "records": 1967,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/GOLD_MELTED_WHOLESALE.json",
+      "url": "https://iran-market.github.io/data/history/GOLD_MELTED_WHOLESALE.json",
+      "description": "Daily OHLC history for GOLD_MELTED_WHOLESALE",
+      "records": 2483,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/GOLD_17.json",
+      "url": "https://iran-market.github.io/data/history/GOLD_17.json",
+      "description": "Daily OHLC history for GOLD_17",
+      "records": 2479,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/GOLD_FUTURES.json",
+      "url": "https://iran-market.github.io/data/history/GOLD_FUTURES.json",
+      "description": "Daily OHLC history for GOLD_FUTURES",
+      "records": 2203,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/GOLD_WORLD_FUTURES.json",
+      "url": "https://iran-market.github.io/data/history/GOLD_WORLD_FUTURES.json",
+      "description": "Daily OHLC history for GOLD_WORLD_FUTURES",
+      "records": 2202,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/GOLD_18K_740_IRR.json",
+      "url": "https://iran-market.github.io/data/history/GOLD_18K_740_IRR.json",
+      "description": "Daily OHLC history for GOLD_18K_740_IRR",
+      "records": 2198,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/GOLD_17_COIN.json",
+      "url": "https://iran-market.github.io/data/history/GOLD_17_COIN.json",
+      "description": "Daily OHLC history for GOLD_17_COIN",
+      "records": 2197,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/GOLD_MELTED_TRANSFER.json",
+      "url": "https://iran-market.github.io/data/history/GOLD_MELTED_TRANSFER.json",
+      "description": "Daily OHLC history for GOLD_MELTED_TRANSFER",
+      "records": 1672,
+      "unit": "IRT"
+    },
+    {
       "path": "history/USDT_IRR.json",
       "url": "https://iran-market.github.io/data/history/USDT_IRR.json",
       "description": "Daily OHLC history for USDT_IRR",
@@ -276,6 +500,41 @@
       "url": "https://iran-market.github.io/data/history/LTC_USD.json",
       "description": "Daily OHLC history for LTC_USD",
       "records": 4905,
+      "unit": "USD"
+    },
+    {
+      "path": "history/DASH_USD.json",
+      "url": "https://iran-market.github.io/data/history/DASH_USD.json",
+      "description": "Daily OHLC history for DASH_USD",
+      "records": 4613,
+      "unit": "USD"
+    },
+    {
+      "path": "history/XMR_USD.json",
+      "url": "https://iran-market.github.io/data/history/XMR_USD.json",
+      "description": "Daily OHLC history for XMR_USD",
+      "records": 4516,
+      "unit": "USD"
+    },
+    {
+      "path": "history/XLM_USD.json",
+      "url": "https://iran-market.github.io/data/history/XLM_USD.json",
+      "description": "Daily OHLC history for XLM_USD",
+      "records": 4441,
+      "unit": "USD"
+    },
+    {
+      "path": "history/USDT_USD.json",
+      "url": "https://iran-market.github.io/data/history/USDT_USD.json",
+      "description": "Daily OHLC history for USDT_USD",
+      "records": 4228,
+      "unit": "USD"
+    },
+    {
+      "path": "history/ETC_USD.json",
+      "url": "https://iran-market.github.io/data/history/ETC_USD.json",
+      "description": "Daily OHLC history for ETC_USD",
+      "records": 3722,
       "unit": "USD"
     },
     {
