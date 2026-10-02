@@ -1,12 +1,12 @@
 <div align="center">
   <img src="assets/favicon.svg" width="76" height="76" alt="Iran Market Data - API رایگان قیمت بازار ایران">
-  <h1>API رایگان قیمت دلار، طلا، سکه و بازار ایران</h1>
-  <p><strong>دادهٔ آمادهٔ JSON برای قیمت فعلی و تاریخچهٔ روزانه بازار ایران؛ بدون ثبت‌نام و بدون API Key</strong></p>
+  <h1 dir="rtl">API رایگان قیمت دلار، طلا، سکه و بازار ایران</h1>
+  <p dir="rtl"><strong>دادهٔ آمادهٔ JSON برای قیمت فعلی و تاریخچهٔ روزانه بازار ایران؛ بدون ثبت‌نام و بدون API Key</strong></p>
   <p>
-    <a href="https://iran-market.github.io/"><img alt="وب‌سایت Iran Market Data" src="https://img.shields.io/badge/وب‌سایت-مشاهدهٔ_زنده-0f766e"></a>
-    <a href="https://iran-market.github.io/data/latest-toman.json"><img alt="قیمت‌ها هر ۳۰ دقیقه به‌روزرسانی می‌شوند" src="https://img.shields.io/badge/قیمت‌ها-هر_۳۰_دقیقه-2563eb"></a>
-    <a href="https://iran-market.github.io/data/history/index.json"><img alt="۵۸ فایل تاریخچه روزانه" src="https://img.shields.io/badge/تاریخچه-۵۸_نماد-f59e0b"></a>
-    <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/code_license-MIT-111827"></a>
+    <a href="https://iran-market.github.io/"><img alt="وب‌سایت Iran Market Data" src="https://img.shields.io/badge/Website-Live-0f766e"></a>
+    <a href="https://iran-market.github.io/data/latest-toman.json"><img alt="قیمت‌ها هر ۳۰ دقیقه به‌روزرسانی می‌شوند" src="https://img.shields.io/badge/Prices-Every_30_Min-2563eb"></a>
+    <a href="https://iran-market.github.io/data/history/index.json"><img alt="۵۸ فایل تاریخچه روزانه" src="https://img.shields.io/badge/History-58_Symbols-f59e0b"></a>
+    <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/License-MIT-111827"></a>
   </p>
 </div>
 
