@@ -27467,7 +27467,7 @@
     "tehran_time": "2026-10-02T16:00:01+03:30",
     "published_at": "2026-10-02T12:30:01.530Z",
     "update_frequency_minutes": 30,
-    "public_file": "https://iran-market.github.io/data/latest.json",
+    "public_file": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/latest.json",
     "source": "TGJU"
   }
 }

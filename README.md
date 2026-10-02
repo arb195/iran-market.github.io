@@ -4,8 +4,8 @@
   <p dir="rtl"><strong>دادهٔ آمادهٔ JSON برای قیمت فعلی و تاریخچهٔ روزانه بازار ایران؛ بدون ثبت‌نام و بدون API Key</strong></p>
   <p>
     <a href="https://iran-market.github.io/"><img alt="وب‌سایت Iran Market Data" src="https://img.shields.io/badge/Website-Live-0f766e"></a>
-    <a href="https://iran-market.github.io/data/latest-toman.json"><img alt="قیمت‌ها هر ۳۰ دقیقه به‌روزرسانی می‌شوند" src="https://img.shields.io/badge/Prices-Every_30_Min-2563eb"></a>
-    <a href="https://iran-market.github.io/data/history/index.json"><img alt="۱۲۸ فایل تاریخچه روزانه" src="https://img.shields.io/badge/History-128_Symbols-f59e0b"></a>
+    <a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/latest-toman.json"><img alt="قیمت‌ها هر ۳۰ دقیقه به‌روزرسانی می‌شوند" src="https://img.shields.io/badge/Prices-Every_30_Min-2563eb"></a>
+    <a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/index.json"><img alt="۱۲۸ فایل تاریخچه روزانه" src="https://img.shields.io/badge/History-128_Symbols-f59e0b"></a>
     <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/License-MIT-111827"></a>
   </p>
 </div>
@@ -15,7 +15,7 @@
 </p>
 
 <p dir="rtl" align="right">
-در خروجی فعلی، <strong>۱٬۳۵۰ شناسهٔ canonical</strong>، <strong>۹۵۵ نماد دارای قیمت فعلی</strong> و <strong>۱۲۸ فایل تاریخچهٔ OHLC روزانه</strong> منتشر می‌شود. اعداد زنده و قابل اتکا همیشه در <a href="data/symbols.json"><code>data/symbols.json</code></a> و <a href="data/history/index.json"><code>data/history/index.json</code></a> قرار دارند.
+در خروجی فعلی، <strong>۱٬۳۵۰ شناسهٔ canonical</strong>، <strong>۹۵۵ نماد دارای قیمت فعلی</strong> و <strong>۱۲۸ فایل تاریخچهٔ OHLC روزانه</strong> منتشر می‌شود. اعداد زنده و قابل اتکا همیشه در <a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/symbols.json"><code>data/symbols.json</code></a> و <a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/index.json"><code>data/history/index.json</code></a> قرار دارند.
 </p>
 
 <p align="center">
@@ -23,7 +23,7 @@
   ·
   <a href="SYMBOLS.md"><strong>راهنمای کامل نمادها</strong></a>
   ·
-  <a href="https://iran-market.github.io/data/history/index.json"><strong>فهرست تاریخچه‌ها</strong></a>
+  <a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/index.json"><strong>فهرست تاریخچه‌ها</strong></a>
 </p>
 
 <h2 dir="rtl" align="right">شروع سریع</h2>
@@ -32,13 +32,13 @@
 
 ```bash
 curl --fail --silent \
-  https://iran-market.github.io/data/popular.json
+  https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/popular.json
 ```
 
 <p dir="rtl" align="right">این URL عمومی است، CORS دارد و مستقیماً در مرورگر یا کد قابل استفاده است:</p>
 
 ```text
-https://iran-market.github.io/data/popular.json
+https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/popular.json
 ```
 
 <h2 dir="rtl" align="right">فایل‌های عمومی و کاربرد هرکدام</h2>
@@ -57,43 +57,43 @@ https://iran-market.github.io/data/popular.json
       <td><code>popular.json</code></td>
       <td>دلار آزاد، یورو، پوند، طلای ۱۸ عیار، سکه امامی و تتر؛ مناسب شروع سریع</td>
       <td>هر ۳۰ دقیقه</td>
-      <td><a href="https://iran-market.github.io/data/popular.json">GitHub Pages</a></td>
+      <td><a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/popular.json">Raw GitHub</a></td>
     </tr>
     <tr>
       <td><code>latest-toman.json</code></td>
       <td>همهٔ قیمت‌های فعلی؛ دارایی‌های ریالی به تومان و دارایی‌های جهانی در ارز اصلی خودشان</td>
       <td>هر ۳۰ دقیقه</td>
-      <td><a href="https://iran-market.github.io/data/latest-toman.json">GitHub Pages</a></td>
+      <td><a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/latest-toman.json">Raw GitHub</a></td>
     </tr>
     <tr>
       <td><code>latest.json</code></td>
       <td>همهٔ قیمت‌های فعلی؛ دارایی‌های ریالی به ریال و دارایی‌های جهانی در ارز اصلی خودشان</td>
       <td>هر ۳۰ دقیقه</td>
-      <td><a href="https://iran-market.github.io/data/latest.json">GitHub Pages</a></td>
+      <td><a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/latest.json">Raw GitHub</a></td>
     </tr>
     <tr>
       <td><code>symbols.json</code></td>
       <td>مرجع شناسه‌ها، نام معتبر، دسته، واحد، وضعیت قیمت فعلی و مسیر تاریخچه</td>
       <td>هر ۳۰ دقیقه</td>
-      <td><a href="https://iran-market.github.io/data/symbols.json">GitHub Pages</a></td>
+      <td><a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/symbols.json">Raw GitHub</a></td>
     </tr>
     <tr>
       <td><code>history/index.json</code></td>
       <td>فهرست ماشین‌خوان تاریخچه‌ها، تعداد رکورد، ارز و بازهٔ زمانی هر نماد</td>
       <td>فهرست هر ۳۰ دقیقه؛ فایل‌های تاریخچه روزانه</td>
-      <td><a href="https://iran-market.github.io/data/history/index.json">GitHub Pages</a></td>
+      <td><a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/index.json">Raw GitHub</a></td>
     </tr>
     <tr>
       <td><code>history/{SYMBOL}.json</code></td>
       <td>کندل‌های OHLC روزانهٔ یک نماد، مرتب‌شده از قدیمی به جدید</td>
       <td>روزانه</td>
-      <td><a href="https://iran-market.github.io/data/history/USD_IRR_FREE.json">نمونهٔ دلار آزاد</a></td>
+      <td><a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/USD_IRR_FREE.json">نمونهٔ دلار آزاد</a></td>
     </tr>
     <tr>
       <td><code>manifest.json</code></td>
       <td>فهرست فایل‌های منتشرشده، تعداد رکوردها و metadata انتشار</td>
       <td>هر ۳۰ دقیقه</td>
-      <td><a href="https://iran-market.github.io/data/manifest.json">GitHub Pages</a></td>
+      <td><a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/manifest.json">Raw GitHub</a></td>
     </tr>
   </tbody>
 </table>
@@ -101,7 +101,9 @@ https://iran-market.github.io/data/popular.json
 <br clear="all">
 
 <blockquote dir="rtl">
-برای دادهٔ تازه‌تر، لینک GitHub Pages پیشنهاد می‌شود. نسخهٔ CDN ممکن است چند دقیقه cache داشته باشد. الگوی CDN برابر است با:<br>
+<strong>مسیر پیشنهادی برای مصرف JSON، Raw GitHub است</strong> تا ترافیک فایل‌ها از سهمیهٔ پهنای باند GitHub Pages عبور نکند. Raw GitHub معمولاً حدود ۵ دقیقه cache می‌شود و برای قیمت‌های نیم‌ساعتی انتخاب مناسب‌تری است:<br>
+<code>https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/{FILE}</code><br><br>
+jsDelivr نیز به‌عنوان CDN جایگزین در دسترس است، اما ممکن است فایل شاخهٔ <code>main</code> را حدود ۱۲ ساعت cache کند؛ بنابراین برای داده‌ای استفاده کنید که تأخیر بیشتر در تازه‌شدن آن قابل قبول است:<br>
 <code>https://cdn.jsdelivr.net/gh/iran-market/iran-market.github.io@main/data/{FILE}</code>
 </blockquote>
 
@@ -116,26 +118,26 @@ https://iran-market.github.io/data/popular.json
     <tr><th align="right">بازار</th><th align="right">نماد نمونه</th><th align="right">تاریخچه مستقیم</th></tr>
   </thead>
   <tbody>
-    <tr><td>دلار آزاد</td><td><code>USD_IRR_FREE</code></td><td><a href="https://iran-market.github.io/data/history/USD_IRR_FREE.json">JSON</a></td></tr>
-    <tr><td>یورو آزاد</td><td><code>EUR_IRR_FREE</code></td><td><a href="https://iran-market.github.io/data/history/EUR_IRR_FREE.json">JSON</a></td></tr>
-    <tr><td>طلای ۱۸ عیار</td><td><code>GOLD_18K_IRR</code></td><td><a href="https://iran-market.github.io/data/history/GOLD_18K_IRR.json">JSON</a></td></tr>
-    <tr><td>سکه امامی</td><td><code>COIN_EMAMI_IRR</code></td><td><a href="https://iran-market.github.io/data/history/COIN_EMAMI_IRR.json">JSON</a></td></tr>
-    <tr><td>تتر ریالی</td><td><code>USDT_IRR</code></td><td><a href="https://iran-market.github.io/data/history/USDT_IRR.json">JSON</a></td></tr>
-    <tr><td>بیت‌کوین دلاری</td><td><code>BTC_USD</code></td><td><a href="https://iran-market.github.io/data/history/BTC_USD.json">JSON</a></td></tr>
-    <tr><td>قهوه لندن</td><td><code>COMMODITY_LONDON_COFFEE</code></td><td><a href="https://iran-market.github.io/data/history/COMMODITY_LONDON_COFFEE.json">JSON</a></td></tr>
+    <tr><td>دلار آزاد</td><td><code>USD_IRR_FREE</code></td><td><a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/USD_IRR_FREE.json">JSON</a></td></tr>
+    <tr><td>یورو آزاد</td><td><code>EUR_IRR_FREE</code></td><td><a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/EUR_IRR_FREE.json">JSON</a></td></tr>
+    <tr><td>طلای ۱۸ عیار</td><td><code>GOLD_18K_IRR</code></td><td><a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/GOLD_18K_IRR.json">JSON</a></td></tr>
+    <tr><td>سکه امامی</td><td><code>COIN_EMAMI_IRR</code></td><td><a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/COIN_EMAMI_IRR.json">JSON</a></td></tr>
+    <tr><td>تتر ریالی</td><td><code>USDT_IRR</code></td><td><a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/USDT_IRR.json">JSON</a></td></tr>
+    <tr><td>بیت‌کوین دلاری</td><td><code>BTC_USD</code></td><td><a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/BTC_USD.json">JSON</a></td></tr>
+    <tr><td>قهوه لندن</td><td><code>COMMODITY_LONDON_COFFEE</code></td><td><a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/COMMODITY_LONDON_COFFEE.json">JSON</a></td></tr>
   </tbody>
 </table>
 
 <br clear="all">
 
 <p dir="rtl" align="right">
-فهرست کامل و قابل جست‌وجوی شناسه‌ها در <a href="SYMBOLS.md">راهنمای نمادها</a> و نسخهٔ ماشین‌خوان آن در <a href="https://iran-market.github.io/data/symbols.json"><code>symbols.json</code></a> قرار دارد. نام فارسی یا انگلیسی حدس زده نمی‌شود؛ اگر نام معتبر موجود نباشد مقدار آن <code>null</code> است و رابط وب خود symbol را نمایش می‌دهد.
+فهرست کامل و قابل جست‌وجوی شناسه‌ها در <a href="SYMBOLS.md">راهنمای نمادها</a> و نسخهٔ ماشین‌خوان آن در <a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/symbols.json"><code>symbols.json</code></a> قرار دارد. نام فارسی یا انگلیسی حدس زده نمی‌شود؛ اگر نام معتبر موجود نباشد مقدار آن <code>null</code> است و رابط وب خود symbol را نمایش می‌دهد.
 </p>
 
 <h2 dir="rtl" align="right">نمونهٔ JavaScript</h2>
 
 ```js
-const url = 'https://iran-market.github.io/data/popular.json';
+const url = 'https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/popular.json';
 const response = await fetch(url);
 
 if (!response.ok) {
@@ -161,7 +163,7 @@ console.log({
 ```python
 import requests
 
-url = "https://iran-market.github.io/data/history/USD_IRR_FREE.json"
+url = "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/USD_IRR_FREE.json"
 response = requests.get(url, timeout=20)
 response.raise_for_status()
 
@@ -185,7 +187,7 @@ for candle in payload["data"][-7:]:
 
 ```js
 const directory = await fetch(
-  'https://iran-market.github.io/data/history/index.json',
+  'https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/index.json',
 ).then((response) => response.json());
 
 const coffee = directory.data.find(
@@ -286,7 +288,8 @@ console.log(history.meta.currency, history.data.at(-1));
   <li>فرمت همهٔ خروجی‌ها UTF-8 JSON و دسترسی آن‌ها عمومی است.</li>
   <li>منبع فعلی داده <strong>TGJU</strong> است؛ منبع دیگری در این نسخه ادغام نشده است.</li>
   <li>این مخزن static data API است؛ پارامتر جست‌وجو، API key، حساب کاربری و rate-limit اختصاصی ندارد.</li>
-  <li>دسترسی به GitHub Pages یا jsDelivr تابع پایداری و سیاست cache همان سرویس‌ها است و SLA تجاری ارائه نمی‌شود.</li>
+  <li>برای JSON از Raw GitHub (پیشنهادی، cache حدود ۵ دقیقه) یا jsDelivr (جایگزین، cache حدود ۱۲ ساعت) استفاده کنید؛ GitHub Pages فقط میزبان رابط و مستندات وب است.</li>
+  <li>دسترسی به Raw GitHub یا jsDelivr تابع پایداری و سیاست cache همان سرویس‌ها است و SLA تجاری ارائه نمی‌شود.</li>
   <li>قیمت‌ها صرفاً جهت اطلاع‌رسانی‌اند و توصیهٔ خرید یا فروش نیستند؛ برای استفادهٔ مالی یا حساس، داده را مستقلاً راستی‌آزمایی کنید.</li>
 </ul>
 
@@ -298,7 +301,7 @@ console.log(history.meta.currency, history.data.at(-1));
 
 <h2>Free Iran Market API</h2>
 
-Iran Market Data provides public, no-auth JSON files for current and historical Iranian market data: free-market USD/IRR exchange rates, EUR and GBP, Iranian gold and coins, USDT, cryptocurrencies, energy, coffee, grains, and industrial metals. Current-price snapshots are published every 30 minutes, while selected daily OHLC histories are refreshed once per day. Start with [`popular.json`](https://iran-market.github.io/data/popular.json), discover canonical identifiers in [`symbols.json`](https://iran-market.github.io/data/symbols.json), and enumerate available histories through [`history/index.json`](https://iran-market.github.io/data/history/index.json).
+Iran Market Data provides public, no-auth JSON files for current and historical Iranian market data: free-market USD/IRR exchange rates, EUR and GBP, Iranian gold and coins, USDT, cryptocurrencies, energy, coffee, grains, and industrial metals. Current-price snapshots are published every 30 minutes, while selected daily OHLC histories are refreshed once per day. Start with [`popular.json`](https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/popular.json), discover canonical identifiers in [`symbols.json`](https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/symbols.json), and enumerate available histories through [`history/index.json`](https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/index.json).
 
 <h2 dir="rtl" align="right">مجوز</h2>
 

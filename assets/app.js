@@ -1,7 +1,9 @@
 /* global document, window */
 
-const DATA_ROOT = './data';
-const PUBLIC_ROOT = 'https://iran-market.github.io/data';
+// Keep JSON traffic off GitHub Pages. Raw GitHub's shorter cache window is preferable
+// to the optional jsDelivr mirror for these frequently refreshed market snapshots.
+const PUBLIC_ROOT = 'https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data';
+const DATA_ROOT = PUBLIC_ROOT;
 const POPULAR_SYMBOLS = new Set(['USD_IRR_FREE', 'GOLD_18K_IRR', 'COIN_EMAMI_IRR', 'USDT_IRR', 'EUR_IRR_FREE', 'GBP_IRR_FREE']);
 
 const state = {
@@ -168,10 +170,10 @@ function symbolRow(item) {
   const name = item.name_fa || item.name_en;
   const unit = item.currency === 'IRR' ? 'ریال' : item.currency;
   const latest = item.has_latest
-    ? `<a class="data-badge live" href="data/latest.json">${iconSvg('activity')}قیمت فعلی</a>`
+    ? `<a class="data-badge live" href="${PUBLIC_ROOT}/latest.json">${iconSvg('activity')}قیمت فعلی</a>`
     : `<span class="data-badge muted">${iconSvg('circle-x')}بدون قیمت فعلی</span>`;
   const history = item.history_file
-    ? ` <a class="data-badge history" href="data/${escapeHtml(item.history_file)}">${iconSvg('history')}تاریخچه</a>`
+    ? ` <a class="data-badge history" href="${PUBLIC_ROOT}/${escapeHtml(item.history_file)}">${iconSvg('history')}تاریخچه</a>`
     : '';
   return `<tr>
     <td><code>${escapeHtml(item.symbol)}</code></td>

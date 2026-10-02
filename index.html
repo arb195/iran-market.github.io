@@ -44,17 +44,17 @@
           {
             "@type": "DataDownload",
             "encodingFormat": "application/json",
-            "contentUrl": "https://iran-market.github.io/data/symbols.json"
+            "contentUrl": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/symbols.json"
           },
           {
             "@type": "DataDownload",
             "encodingFormat": "application/json",
-            "contentUrl": "https://iran-market.github.io/data/latest-toman.json"
+            "contentUrl": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/latest-toman.json"
           },
           {
             "@type": "DataDownload",
             "encodingFormat": "application/json",
-            "contentUrl": "https://iran-market.github.io/data/history/USD_IRR_FREE.json"
+            "contentUrl": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/USD_IRR_FREE.json"
           }
         ],
         "temporalCoverage": "2011/..",
@@ -91,7 +91,7 @@
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#docs"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-rocket"></use></svg>شروع سریع</a>
-            <a class="button ghost" href="data/latest-toman.json"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-file-json"></use></svg>مشاهده JSON</a>
+            <a class="button ghost" href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/latest-toman.json"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-file-json"></use></svg>مشاهده JSON</a>
           </div>
           <div class="freshness" id="freshness" role="status">
             <span class="pulse"></span>
@@ -104,8 +104,8 @@
             <b>fetch-market.js</b>
           </div>
           <pre><code><span class="code-purple">const</span> res = <span class="code-purple">await</span> fetch(
-  <span class="code-green">'https://iran-market.github.io/
-   data/popular.json'</span>
+  <span class="code-green">'https://raw.githubusercontent.com/iran-market/
+   iran-market.github.io/main/data/popular.json'</span>
 );
 
 <span class="code-purple">const</span> { data } = <span class="code-purple">await</span> res.json();
@@ -114,7 +114,7 @@
 );
 
 console.log(usd.price); <span class="code-comment">// تومان</span></code></pre>
-          <button class="copy-code" data-copy="https://iran-market.github.io/data/popular.json"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-copy"></use></svg>کپی لینک فایل</button>
+          <button class="copy-code" data-copy="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/popular.json"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-copy"></use></svg>کپی لینک فایل</button>
         </div>
       </section>
 
@@ -148,7 +148,7 @@ console.log(usd.price); <span class="code-comment">// تومان</span></code></
         </div>
         <div class="section-foot">
           <span id="result-count">در حال بارگذاری…</span>
-          <a href="data/latest-toman.json"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-download"></use></svg>دریافت همهٔ قیمت‌ها</a>
+          <a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/latest-toman.json"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-download"></use></svg>دریافت همهٔ قیمت‌ها</a>
         </div>
       </section>
 
@@ -160,7 +160,7 @@ console.log(usd.price); <span class="code-comment">// تومان</span></code></
               <h2><span class="heading-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-tags"></use></svg></span>راهنمای کامل شناسه‌ها</h2>
               <p>نام‌ها و دسته‌بندی‌ها مستقیماً از دادهٔ مرجع ساخته می‌شوند؛ موارد حل‌نشده بدون نام نمایش داده می‌شوند، نه با حدس.</p>
             </div>
-            <a class="button ghost" href="data/symbols.json"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-download"></use></svg>دریافت symbols.json</a>
+            <a class="button ghost" href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/symbols.json"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-download"></use></svg>دریافت symbols.json</a>
           </div>
           <div class="symbol-tools">
             <label class="search-box symbol-search">
@@ -211,7 +211,7 @@ console.log(usd.price); <span class="code-comment">// تومان</span></code></
       <section class="section shell" id="docs">
         <div class="section-heading docs-heading">
           <div><span class="kicker">ZERO AUTH · CORS READY</span><h2><span class="heading-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-terminal"></use></svg></span>از صفر تا داده در چند خط</h2></div>
-          <p>فایل‌ها UTF-8، عمومی و قابل استفاده در مرورگر، Node.js، Python، PHP و موبایل هستند.</p>
+          <p>فایل‌ها UTF-8، عمومی و قابل استفاده در مرورگر، Node.js، Python، PHP و موبایل هستند. <a href="https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/popular.json">Raw GitHub</a> مسیر پیشنهادی است (کش کوتاه‌تر، حدود ۵ دقیقه)؛ <a href="https://cdn.jsdelivr.net/gh/iran-market/iran-market.github.io@main/data/popular.json">jsDelivr</a> با کش حدود ۱۲ ساعت برای داده‌ای مناسب است که تازگی کمتر اهمیت دارد.</p>
         </div>
         <div class="docs-layout">
           <aside class="endpoint-list" aria-label="فایل‌های قابل دریافت">
