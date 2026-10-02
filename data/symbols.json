@@ -1,12 +1,12 @@
 {
   "meta": {
-    "published_at": "2026-10-02T11:34:49.702Z",
+    "published_at": "2026-10-02T11:38:16.626Z",
     "update_frequency_minutes": 30,
     "source": "TGJU",
     "symbol_scope": "Iran Market canonical identifiers",
     "total": 1350,
     "with_latest_price": 955,
-    "with_published_history": 95,
+    "with_published_history": 128,
     "categories": {
       "coin": 77,
       "commodity": 88,
@@ -1335,7 +1335,7 @@
       "status": "provisional",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/BASE_GLOBAL_LEAD.json"
     },
     {
       "symbol": "BASE_GLOBAL_NICKEL",
@@ -1377,7 +1377,7 @@
       "status": "provisional",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/BASE_GLOBAL_TIN.json"
     },
     {
       "symbol": "BASE_GLOBAL_ZINC",
@@ -1433,7 +1433,7 @@
       "status": "provisional",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/BASE_US_STEEL_COIL.json"
     },
     {
       "symbol": "BASE_US_ZINC",
@@ -1671,7 +1671,7 @@
       "status": "provisional",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/COMMODITY_FEED_CATTLE.json"
     },
     {
       "symbol": "COMMODITY_KRAFT_PULP",
@@ -1699,7 +1699,7 @@
       "status": "provisional",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/COMMODITY_LIVE_CATTLE.json"
     },
     {
       "symbol": "COMMODITY_LONDON_COCOA",
@@ -1741,7 +1741,7 @@
       "status": "provisional",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/COMMODITY_LONDON_SUGAR.json"
     },
     {
       "symbol": "COMMODITY_LONDON_WHEAT",
@@ -1769,7 +1769,7 @@
       "status": "provisional",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/COMMODITY_LUMBER.json"
     },
     {
       "symbol": "COMMODITY_MAGNESIUM",
@@ -1825,7 +1825,7 @@
       "status": "provisional",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/COMMODITY_ORANGE_JUICE.json"
     },
     {
       "symbol": "COMMODITY_PHOSPHORUS",
@@ -2007,7 +2007,7 @@
       "status": "provisional",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/COMMODITY_SOYBEAN_MEAL.json"
     },
     {
       "symbol": "COMMODITY_SOYBEANS",
@@ -2343,7 +2343,7 @@
       "status": "active",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/ADA_IRR.json"
     },
     {
       "symbol": "ADA_USD",
@@ -2371,7 +2371,7 @@
       "status": "active",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/AVAX_IRR.json"
     },
     {
       "symbol": "AVAX_USD",
@@ -2385,7 +2385,7 @@
       "status": "active",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/AVAX_USD.json"
     },
     {
       "symbol": "BCH_IRR",
@@ -2413,7 +2413,7 @@
       "status": "active",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/BCH_USD.json"
     },
     {
       "symbol": "BNB_IRR",
@@ -2427,7 +2427,7 @@
       "status": "active",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/BNB_IRR.json"
     },
     {
       "symbol": "BNB_USD",
@@ -2455,7 +2455,7 @@
       "status": "active",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/BTC_IRR.json"
     },
     {
       "symbol": "BTC_USD",
@@ -2945,7 +2945,7 @@
       "status": "active",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/DOGE_IRR.json"
     },
     {
       "symbol": "DOGE_USD",
@@ -2973,7 +2973,7 @@
       "status": "active",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/DOT_IRR.json"
     },
     {
       "symbol": "DOT_USD",
@@ -2987,7 +2987,7 @@
       "status": "active",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/DOT_USD.json"
     },
     {
       "symbol": "EOS_USD",
@@ -3043,7 +3043,7 @@
       "status": "active",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/LINK_IRR.json"
     },
     {
       "symbol": "LINK_USD",
@@ -3057,7 +3057,7 @@
       "status": "active",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/LINK_USD.json"
     },
     {
       "symbol": "LTC_IRR",
@@ -3113,7 +3113,7 @@
       "status": "active",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/SHIB_USD.json"
     },
     {
       "symbol": "SOL_IRR",
@@ -3127,7 +3127,7 @@
       "status": "active",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/SOL_IRR.json"
     },
     {
       "symbol": "SOL_USD",
@@ -3169,7 +3169,7 @@
       "status": "active",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/TON_USD.json"
     },
     {
       "symbol": "TRX_IRR",
@@ -3183,7 +3183,7 @@
       "status": "active",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/TRX_IRR.json"
     },
     {
       "symbol": "TRX_USD",
@@ -3211,7 +3211,7 @@
       "status": "active",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/USDC_IRR.json"
     },
     {
       "symbol": "USDC_USD",
@@ -3225,7 +3225,7 @@
       "status": "active",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/USDC_USD.json"
     },
     {
       "symbol": "USDT_IRR",
@@ -8167,7 +8167,7 @@
       "status": "provisional",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/COMMODITY_SOYBEAN_OIL.json"
     },
     {
       "symbol": "COMMODITY_SUNFLOWER_OIL",
@@ -11261,7 +11261,7 @@
       "status": "provisional",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/DIFF_AUD_USD.json"
     },
     {
       "symbol": "DIFF_BOB_USD",
@@ -11359,7 +11359,7 @@
       "status": "provisional",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/DIFF_EUR_USD.json"
     },
     {
       "symbol": "DIFF_GBP_USD",
@@ -11373,7 +11373,7 @@
       "status": "provisional",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/DIFF_GBP_USD.json"
     },
     {
       "symbol": "DIFF_GHS_USD",
@@ -11667,7 +11667,7 @@
       "status": "provisional",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/DIFF_USD_CAD.json"
     },
     {
       "symbol": "DIFF_USD_CHF",
@@ -11681,7 +11681,7 @@
       "status": "provisional",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/DIFF_USD_CHF.json"
     },
     {
       "symbol": "DIFF_USD_CLP",
@@ -11961,7 +11961,7 @@
       "status": "provisional",
       "has_latest": true,
       "latest_file": "latest.json",
-      "history_file": null
+      "history_file": "history/DIFF_USD_JPY.json"
     },
     {
       "symbol": "DIFF_USD_KMF",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-02T11:34:49.702Z",
+  "generated_at": "2026-10-02T11:38:16.626Z",
   "update_frequency_minutes": 30,
   "source": "TGJU",
   "license_note": "Market data belongs to its original providers; verify before financial use.",
@@ -37,7 +37,7 @@
       "path": "history/index.json",
       "url": "https://iran-market.github.io/data/history/index.json",
       "description": "Directory of published daily OHLC history files",
-      "records": 95,
+      "records": 128,
       "unit": null
     },
     {
@@ -538,6 +538,125 @@
       "unit": "USD"
     },
     {
+      "path": "history/BCH_USD.json",
+      "url": "https://iran-market.github.io/data/history/BCH_USD.json",
+      "description": "Daily OHLC history for BCH_USD",
+      "records": 3358,
+      "unit": "USD"
+    },
+    {
+      "path": "history/LINK_USD.json",
+      "url": "https://iran-market.github.io/data/history/LINK_USD.json",
+      "description": "Daily OHLC history for LINK_USD",
+      "records": 3298,
+      "unit": "USD"
+    },
+    {
+      "path": "history/USDC_USD.json",
+      "url": "https://iran-market.github.io/data/history/USDC_USD.json",
+      "description": "Daily OHLC history for USDC_USD",
+      "records": 2897,
+      "unit": "USD"
+    },
+    {
+      "path": "history/SHIB_USD.json",
+      "url": "https://iran-market.github.io/data/history/SHIB_USD.json",
+      "description": "Daily OHLC history for SHIB_USD",
+      "records": 2254,
+      "unit": "USD"
+    },
+    {
+      "path": "history/DOT_USD.json",
+      "url": "https://iran-market.github.io/data/history/DOT_USD.json",
+      "description": "Daily OHLC history for DOT_USD",
+      "records": 2234,
+      "unit": "USD"
+    },
+    {
+      "path": "history/AVAX_USD.json",
+      "url": "https://iran-market.github.io/data/history/AVAX_USD.json",
+      "description": "Daily OHLC history for AVAX_USD",
+      "records": 2201,
+      "unit": "USD"
+    },
+    {
+      "path": "history/TON_USD.json",
+      "url": "https://iran-market.github.io/data/history/TON_USD.json",
+      "description": "Daily OHLC history for TON_USD",
+      "records": 1752,
+      "unit": "USD"
+    },
+    {
+      "path": "history/BTC_IRR.json",
+      "url": "https://iran-market.github.io/data/history/BTC_IRR.json",
+      "description": "Daily OHLC history for BTC_IRR",
+      "records": 2013,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/BNB_IRR.json",
+      "url": "https://iran-market.github.io/data/history/BNB_IRR.json",
+      "description": "Daily OHLC history for BNB_IRR",
+      "records": 2010,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/DOGE_IRR.json",
+      "url": "https://iran-market.github.io/data/history/DOGE_IRR.json",
+      "description": "Daily OHLC history for DOGE_IRR",
+      "records": 2011,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/ADA_IRR.json",
+      "url": "https://iran-market.github.io/data/history/ADA_IRR.json",
+      "description": "Daily OHLC history for ADA_IRR",
+      "records": 2014,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/TRX_IRR.json",
+      "url": "https://iran-market.github.io/data/history/TRX_IRR.json",
+      "description": "Daily OHLC history for TRX_IRR",
+      "records": 2024,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/SOL_IRR.json",
+      "url": "https://iran-market.github.io/data/history/SOL_IRR.json",
+      "description": "Daily OHLC history for SOL_IRR",
+      "records": 1716,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/DOT_IRR.json",
+      "url": "https://iran-market.github.io/data/history/DOT_IRR.json",
+      "description": "Daily OHLC history for DOT_IRR",
+      "records": 1711,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/AVAX_IRR.json",
+      "url": "https://iran-market.github.io/data/history/AVAX_IRR.json",
+      "description": "Daily OHLC history for AVAX_IRR",
+      "records": 1972,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/LINK_IRR.json",
+      "url": "https://iran-market.github.io/data/history/LINK_IRR.json",
+      "description": "Daily OHLC history for LINK_IRR",
+      "records": 2014,
+      "unit": "IRT"
+    },
+    {
+      "path": "history/USDC_IRR.json",
+      "url": "https://iran-market.github.io/data/history/USDC_IRR.json",
+      "description": "Daily OHLC history for USDC_IRR",
+      "records": 2017,
+      "unit": "IRT"
+    },
+    {
       "path": "history/BRENT_USD.json",
       "url": "https://iran-market.github.io/data/history/BRENT_USD.json",
       "description": "Daily OHLC history for BRENT_USD",
@@ -671,6 +790,55 @@
       "unit": "USD"
     },
     {
+      "path": "history/COMMODITY_SOYBEAN_MEAL.json",
+      "url": "https://iran-market.github.io/data/history/COMMODITY_SOYBEAN_MEAL.json",
+      "description": "Daily OHLC history for COMMODITY_SOYBEAN_MEAL",
+      "records": 4025,
+      "unit": "USD"
+    },
+    {
+      "path": "history/COMMODITY_LUMBER.json",
+      "url": "https://iran-market.github.io/data/history/COMMODITY_LUMBER.json",
+      "description": "Daily OHLC history for COMMODITY_LUMBER",
+      "records": 4028,
+      "unit": "USD"
+    },
+    {
+      "path": "history/COMMODITY_LIVE_CATTLE.json",
+      "url": "https://iran-market.github.io/data/history/COMMODITY_LIVE_CATTLE.json",
+      "description": "Daily OHLC history for COMMODITY_LIVE_CATTLE",
+      "records": 4001,
+      "unit": "USD"
+    },
+    {
+      "path": "history/COMMODITY_FEED_CATTLE.json",
+      "url": "https://iran-market.github.io/data/history/COMMODITY_FEED_CATTLE.json",
+      "description": "Daily OHLC history for COMMODITY_FEED_CATTLE",
+      "records": 3998,
+      "unit": "USD"
+    },
+    {
+      "path": "history/COMMODITY_LONDON_SUGAR.json",
+      "url": "https://iran-market.github.io/data/history/COMMODITY_LONDON_SUGAR.json",
+      "description": "Daily OHLC history for COMMODITY_LONDON_SUGAR",
+      "records": 3957,
+      "unit": "USD"
+    },
+    {
+      "path": "history/COMMODITY_ORANGE_JUICE.json",
+      "url": "https://iran-market.github.io/data/history/COMMODITY_ORANGE_JUICE.json",
+      "description": "Daily OHLC history for COMMODITY_ORANGE_JUICE",
+      "records": 3994,
+      "unit": "USD"
+    },
+    {
+      "path": "history/COMMODITY_SOYBEAN_OIL.json",
+      "url": "https://iran-market.github.io/data/history/COMMODITY_SOYBEAN_OIL.json",
+      "description": "Daily OHLC history for COMMODITY_SOYBEAN_OIL",
+      "records": 4038,
+      "unit": "USD"
+    },
+    {
       "path": "history/ALUMINIUM.json",
       "url": "https://iran-market.github.io/data/history/ALUMINIUM.json",
       "description": "Daily OHLC history for ALUMINIUM",
@@ -704,6 +872,69 @@
       "description": "Daily OHLC history for BASE_GLOBAL_ZINC",
       "records": 3940,
       "unit": "USD"
+    },
+    {
+      "path": "history/BASE_GLOBAL_LEAD.json",
+      "url": "https://iran-market.github.io/data/history/BASE_GLOBAL_LEAD.json",
+      "description": "Daily OHLC history for BASE_GLOBAL_LEAD",
+      "records": 3939,
+      "unit": "USD"
+    },
+    {
+      "path": "history/BASE_GLOBAL_TIN.json",
+      "url": "https://iran-market.github.io/data/history/BASE_GLOBAL_TIN.json",
+      "description": "Daily OHLC history for BASE_GLOBAL_TIN",
+      "records": 3939,
+      "unit": "USD"
+    },
+    {
+      "path": "history/BASE_US_STEEL_COIL.json",
+      "url": "https://iran-market.github.io/data/history/BASE_US_STEEL_COIL.json",
+      "description": "Daily OHLC history for BASE_US_STEEL_COIL",
+      "records": 3470,
+      "unit": "USD"
+    },
+    {
+      "path": "history/DIFF_EUR_USD.json",
+      "url": "https://iran-market.github.io/data/history/DIFF_EUR_USD.json",
+      "description": "Daily OHLC history for DIFF_EUR_USD",
+      "records": 5106,
+      "unit": "POINTS"
+    },
+    {
+      "path": "history/DIFF_GBP_USD.json",
+      "url": "https://iran-market.github.io/data/history/DIFF_GBP_USD.json",
+      "description": "Daily OHLC history for DIFF_GBP_USD",
+      "records": 5045,
+      "unit": "POINTS"
+    },
+    {
+      "path": "history/DIFF_USD_JPY.json",
+      "url": "https://iran-market.github.io/data/history/DIFF_USD_JPY.json",
+      "description": "Daily OHLC history for DIFF_USD_JPY",
+      "records": 4996,
+      "unit": "POINTS"
+    },
+    {
+      "path": "history/DIFF_USD_CHF.json",
+      "url": "https://iran-market.github.io/data/history/DIFF_USD_CHF.json",
+      "description": "Daily OHLC history for DIFF_USD_CHF",
+      "records": 4176,
+      "unit": "POINTS"
+    },
+    {
+      "path": "history/DIFF_AUD_USD.json",
+      "url": "https://iran-market.github.io/data/history/DIFF_AUD_USD.json",
+      "description": "Daily OHLC history for DIFF_AUD_USD",
+      "records": 4636,
+      "unit": "POINTS"
+    },
+    {
+      "path": "history/DIFF_USD_CAD.json",
+      "url": "https://iran-market.github.io/data/history/DIFF_USD_CAD.json",
+      "description": "Daily OHLC history for DIFF_USD_CAD",
+      "records": 4184,
+      "unit": "POINTS"
     }
   ]
 }
