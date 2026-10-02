@@ -26843,7 +26843,7 @@
       "low": 256021,
       "close": 256021,
       "volume": null,
-      "ticks": 789,
+      "ticks": 909,
       "origin": "derived",
       "quality": [
         "spike"
@@ -26858,7 +26858,7 @@
     "unit": "toman",
     "count": 2064,
     "next_cursor": null,
-    "published_at": "2026-10-02T09:00:01.497Z",
+    "published_at": "2026-10-02T09:30:01.493Z",
     "update_frequency_minutes": 30,
     "public_file": "https://iran-market.github.io/data/history/USDT_IRR.json"
   }
