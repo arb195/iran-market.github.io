@@ -12,6 +12,7 @@ const state = {
   historySymbol: 'USD_IRR_FREE',
   historyRange: 365,
   history: new Map(),
+  historyDirectory: [],
   endpoint: 'popular',
   language: 'js',
   symbols: [],
@@ -214,15 +215,27 @@ async function loadSymbols() {
   }
 }
 
-const historyNames = {
-  USD_IRR_FREE: 'دلار آزاد',
-  GOLD_18K_IRR: 'طلای ۱۸ عیار',
-  COIN_EMAMI_IRR: 'سکه امامی',
-  USDT_IRR: 'تتر',
-};
+const historyNames = new Map([
+  ['USD_IRR_FREE', 'دلار آزاد'],
+  ['GOLD_18K_IRR', 'طلای ۱۸ عیار'],
+  ['COIN_EMAMI_IRR', 'سکه امامی'],
+  ['USDT_IRR', 'تتر'],
+]);
+
+function historyLabel(symbol) {
+  return historyNames.get(symbol) ?? symbol;
+}
+
+function historyCurrency(symbol) {
+  const entry = state.historyDirectory.find((item) => item.symbol === symbol);
+  const currency = entry?.currency ?? state.history.get(symbol)?.meta?.currency;
+  if (currency === 'IRT') return 'تومان';
+  if (currency === 'IRR') return 'ریال';
+  return currency || '';
+}
 
 function chartPoints() {
-  const all = state.history.get(state.historySymbol) ?? [];
+  const all = state.history.get(state.historySymbol)?.data ?? [];
   if (state.historyRange === 'all') return all;
   return all.slice(-Number(state.historyRange));
 }
@@ -277,8 +290,8 @@ function drawChart() {
   canvas._chart = { points, x, y, width };
 
   const last = points.at(-1);
-  $('#chart-name').textContent = historyNames[state.historySymbol];
-  $('#chart-price').textContent = `${faNumber.format(last.close)} تومان`;
+  $('#chart-name').textContent = historyLabel(state.historySymbol);
+  $('#chart-price').textContent = `${faNumber.format(last.close)} ${historyCurrency(state.historySymbol)}`.trim();
   $('#chart-start').textContent = points[0].date_jalali ?? points[0].t.slice(0, 10);
   $('#chart-end').textContent = last.date_jalali ?? last.t.slice(0, 10);
 }
@@ -288,9 +301,9 @@ async function loadHistory(symbol) {
   if (!state.history.has(symbol)) {
     try {
       const payload = await json(`${DATA_ROOT}/history/${symbol}.json`);
-      state.history.set(symbol, payload.data ?? []);
+      state.history.set(symbol, payload);
     } catch (error) {
-      state.history.set(symbol, []);
+      state.history.set(symbol, { data: [], meta: {} });
       console.error('history load failed', error);
     }
   }
@@ -305,7 +318,7 @@ function chartHover(event) {
   const relativeX = Math.max(0, Math.min(rect.width, event.clientX - rect.left));
   const index = Math.round((relativeX / rect.width) * (chart.points.length - 1));
   const point = chart.points[index];
-  tooltip.innerHTML = `<b>${faNumber.format(point.close)} تومان</b><br><span>${escapeHtml(point.date_jalali ?? point.t.slice(0, 10))}</span>`;
+  tooltip.innerHTML = `<b>${faNumber.format(point.close)} ${escapeHtml(historyCurrency(state.historySymbol))}</b><br><span>${escapeHtml(point.date_jalali ?? point.t.slice(0, 10))}</span>`;
   tooltip.style.display = 'block';
   tooltip.style.left = `${Math.min(relativeX + 12, rect.width - 145)}px`;
   tooltip.style.top = `${Math.max(8, event.clientY - rect.top - 48)}px`;
@@ -315,9 +328,46 @@ const endpointPaths = {
   popular: 'popular.json',
   latest: 'latest-toman.json',
   symbols: 'symbols.json',
+  histories: 'history/index.json',
   usd: 'history/USD_IRR_FREE.json',
   gold: 'history/GOLD_18K_IRR.json',
 };
+
+async function loadHistoryDirectory() {
+  try {
+    const payload = await json(`${DATA_ROOT}/history/index.json`);
+    state.historyDirectory = [...(payload.data ?? [])].sort((a, b) => {
+      const categoryOrder = ['currency', 'gold', 'coin', 'precious_metal', 'crypto', 'energy', 'commodity'];
+      const categoryDiff = categoryOrder.indexOf(a.category) - categoryOrder.indexOf(b.category);
+      return categoryDiff || historyLabel(a.symbol).localeCompare(historyLabel(b.symbol), 'fa');
+    });
+    for (const item of state.historyDirectory) {
+      historyNames.set(item.symbol, item.name_fa || item.name_en || item.symbol);
+    }
+    const select = $('#history-symbol');
+    select.innerHTML = '';
+    const grouped = new Map();
+    for (const item of state.historyDirectory) {
+      const category = item.category || 'other';
+      if (!grouped.has(category)) grouped.set(category, []);
+      grouped.get(category).push(item);
+    }
+    for (const [category, items] of grouped) {
+      const group = document.createElement('optgroup');
+      group.label = categoryName(category);
+      for (const item of items) {
+        const option = document.createElement('option');
+        option.value = item.symbol;
+        option.textContent = historyLabel(item.symbol);
+        option.selected = item.symbol === state.historySymbol;
+        group.append(option);
+      }
+      select.append(group);
+    }
+  } catch (error) {
+    console.error('history directory load failed', error);
+  }
+}
 
 function usageSnippet() {
   const url = `${PUBLIC_ROOT}/${endpointPaths[state.endpoint]}`;
@@ -384,4 +434,4 @@ bindEvents();
 renderUsage();
 loadMarkets();
 loadSymbols();
-loadHistory(state.historySymbol);
+loadHistoryDirectory().finally(() => loadHistory(state.historySymbol));

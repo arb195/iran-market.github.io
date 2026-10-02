@@ -188,7 +188,7 @@ console.log(usd.price); <span class="code-comment">// تومان</span></code></
       <section class="section history-section" id="history">
         <div class="shell">
           <div class="section-heading">
-            <div><span class="kicker">HISTORICAL DATA</span><h2>تاریخچه‌ای که آمادهٔ تحلیل است</h2></div>
+            <div><span class="kicker">HISTORICAL DATA</span><h2>تاریخچه‌ای که آمادهٔ تحلیل است</h2><p>ده‌ها فایل روزانه از ارز، طلا، سکه، رمزارز، انرژی، قهوه، غلات و فلزات.</p></div>
             <select id="history-symbol" aria-label="انتخاب نمودار تاریخچه">
               <option value="USD_IRR_FREE">دلار آزاد</option>
               <option value="GOLD_18K_IRR">طلای ۱۸ عیار</option>
@@ -217,6 +217,7 @@ console.log(usd.price); <span class="code-comment">// تومان</span></code></
             <button class="endpoint active" data-endpoint="popular"><b>قیمت‌های منتخب</b><code>/data/popular.json</code></button>
             <button class="endpoint" data-endpoint="latest"><b>همه قیمت‌ها</b><code>/data/latest-toman.json</code></button>
             <button class="endpoint" data-endpoint="symbols"><b>راهنمای نمادها</b><code>/data/symbols.json</code></button>
+            <button class="endpoint" data-endpoint="histories"><b>فهرست تاریخچه‌ها</b><code>/data/history/index.json</code></button>
             <button class="endpoint" data-endpoint="usd"><b>تاریخچه دلار</b><code>/data/history/USD_IRR_FREE.json</code></button>
             <button class="endpoint" data-endpoint="gold"><b>تاریخچه طلا</b><code>/data/history/GOLD_18K_IRR.json</code></button>
           </aside>
@@ -238,8 +239,9 @@ console.log(usd.price); <span class="code-comment">// تومان</span></code></
         <p>
           Iran Market Data راهی ساده برای دریافت قیمت لحظه‌ای دلار آزاد، طلای ۱۸ عیار، سکه
           امامی، تتر و صدها نماد دیگر است. به‌جای scraping و نگه‌داری crawler، فایل JSON آماده را
-          مستقیماً در وب‌سایت، ربات، داشبورد یا پروژهٔ دانشگاهی خود مصرف کنید. تاریخچهٔ قیمت‌ها نیز
-          برای رسم نمودار، تحلیل روند و بک‌تست در دسترس است.
+          مستقیماً در وب‌سایت، ربات، داشبورد یا پروژهٔ دانشگاهی خود مصرف کنید. تاریخچهٔ روزانهٔ
+          ارزها، طلا و سکه، رمزارزها، نفت و گاز، قهوه، کاکائو، غلات و فلزات نیز برای رسم نمودار،
+          تحلیل روند و بک‌تست در دسترس است.
         </p>
       </section>
     </main>

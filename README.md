@@ -1,7 +1,7 @@
 <h1 dir="rtl" align="right">دادهٔ رایگان بازار ایران</h1>
 
 <p dir="rtl" align="right">
-فایل‌های JSON آماده برای قیمت دلار، طلا، سکه، ارز، رمزارز و تاریخچهٔ بازار ایران. داده‌ها هر ۳۰ دقیقه به‌روزرسانی می‌شوند و بدون ثبت‌نام، توکن یا SDK از طریق GitHub Pages و jsDelivr قابل دریافت‌اند.
+فایل‌های JSON آماده برای قیمت دلار، طلا، سکه، ارز، رمزارز، انرژی، قهوه، غلات، فلزات و تاریخچهٔ بازار ایران. قیمت‌های فعلی هر ۳۰ دقیقه و فایل‌های تاریخچه روزانه به‌روزرسانی می‌شوند؛ همه بدون ثبت‌نام، توکن یا SDK از طریق GitHub Pages و jsDelivr قابل دریافت‌اند.
 </p>
 
 <h2 dir="rtl" align="right">لینک‌های مستقیم</h2>
@@ -20,6 +20,7 @@
     <tr><td><code>latest-toman.json</code></td><td>همهٔ قیمت‌های فعلی به تومان</td><td><a href="https://iran-market.github.io/data/latest-toman.json">مشاهده</a></td><td><a href="https://cdn.jsdelivr.net/gh/iran-market/iran-market.github.io@main/data/latest-toman.json">jsDelivr</a></td></tr>
     <tr><td><code>popular.json</code></td><td>دلار، یورو، پوند، طلا، سکه و تتر</td><td><a href="https://iran-market.github.io/data/popular.json">مشاهده</a></td><td><a href="https://cdn.jsdelivr.net/gh/iran-market/iran-market.github.io@main/data/popular.json">jsDelivr</a></td></tr>
     <tr><td><code>symbols.json</code></td><td>فهرست کامل شناسه‌ها، نام‌ها و دسته‌بندی‌ها</td><td><a href="https://iran-market.github.io/data/symbols.json">مشاهده</a></td><td><a href="https://cdn.jsdelivr.net/gh/iran-market/iran-market.github.io@main/data/symbols.json">jsDelivr</a></td></tr>
+    <tr><td><code>history/index.json</code></td><td>فهرست ماشین‌خوان همهٔ تاریخچه‌های منتشرشده</td><td><a href="https://iran-market.github.io/data/history/index.json">مشاهده</a></td><td><a href="https://cdn.jsdelivr.net/gh/iran-market/iran-market.github.io@main/data/history/index.json">jsDelivr</a></td></tr>
     <tr><td><code>history/USD_IRR_FREE.json</code></td><td>تاریخچهٔ روزانه دلار آزاد</td><td><a href="https://iran-market.github.io/data/history/USD_IRR_FREE.json">مشاهده</a></td><td><a href="https://cdn.jsdelivr.net/gh/iran-market/iran-market.github.io@main/data/history/USD_IRR_FREE.json">jsDelivr</a></td></tr>
     <tr><td><code>history/GOLD_18K_IRR.json</code></td><td>تاریخچهٔ روزانه طلای ۱۸ عیار</td><td><a href="https://iran-market.github.io/data/history/GOLD_18K_IRR.json">مشاهده</a></td><td><a href="https://cdn.jsdelivr.net/gh/iran-market/iran-market.github.io@main/data/history/GOLD_18K_IRR.json">jsDelivr</a></td></tr>
     <tr><td><code>history/COIN_EMAMI_IRR.json</code></td><td>تاریخچهٔ روزانه سکه امامی</td><td><a href="https://iran-market.github.io/data/history/COIN_EMAMI_IRR.json">مشاهده</a></td><td><a href="https://cdn.jsdelivr.net/gh/iran-market/iran-market.github.io@main/data/history/COIN_EMAMI_IRR.json">jsDelivr</a></td></tr>
@@ -29,7 +30,7 @@
 
 <br clear="all">
 
-<p dir="rtl" align="right">برای تازه‌ترین نسخه از GitHub Pages استفاده کنید؛ CDN ممکن است چند دقیقه cache داشته باشد.</p>
+<p dir="rtl" align="right">ده‌ها تاریخچهٔ منتخب از ارز، طلا، سکه، رمزارز، انرژی، کالاهای کشاورزی و فلزات در مسیر <code>data/history/</code> منتشر می‌شوند. فهرست قطعی و تعداد رکورد هر فایل را از <code>history/index.json</code> بخوانید. برای تازه‌ترین نسخه از GitHub Pages استفاده کنید؛ CDN ممکن است چند دقیقه cache داشته باشد.</p>
 
 <h2 dir="rtl" align="right">راهنمای شناسه‌ها</h2>
 
@@ -73,7 +74,8 @@ for candle in payload["data"][-7:]:
 <h2 dir="rtl" align="right">پایداری و منبع داده</h2>
 
 <ul dir="rtl" align="right">
-  <li>به‌روزرسانی خودکار: هر ۳۰ دقیقه</li>
+  <li>قیمت‌های فعلی: به‌روزرسانی خودکار هر ۳۰ دقیقه</li>
+  <li>تاریخچه‌های روزانه: به‌روزرسانی روزی یک‌بار برای کنترل مصرف منابع و حجم Git</li>
   <li>فرمت: UTF-8 JSON</li>
   <li>منبع فعلی داده: TGJU</li>
   <li>قیمت‌ها صرفاً جهت اطلاع‌رسانی‌اند؛ پیش از استفادهٔ حساس یا مالی آن‌ها را راستی‌آزمایی کنید.</li>
