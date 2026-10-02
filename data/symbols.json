@@ -1,6 +1,6 @@
 {
   "meta": {
-    "published_at": "2026-10-02T18:00:01.344Z",
+    "published_at": "2026-10-02T18:20:59.736Z",
     "update_frequency_minutes": 30,
     "source": "TGJU",
     "symbol_scope": "Iran Market canonical identifiers",
@@ -18,7 +18,7 @@
       "other": 441,
       "precious_metal": 6
     },
-    "public_file": "https://iran-market.github.io/data/symbols.json"
+    "public_file": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/symbols.json"
   },
   "data": [
     {

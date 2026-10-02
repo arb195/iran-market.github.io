@@ -1,10 +1,10 @@
 {
   "meta": {
-    "published_at": "2026-10-02T18:00:01.344Z",
+    "published_at": "2026-10-02T18:20:59.736Z",
     "update_frequency_minutes": 1440,
     "source": "TGJU",
     "total": 128,
-    "public_file": "https://iran-market.github.io/data/history/index.json"
+    "public_file": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/index.json"
   },
   "data": [
     {
