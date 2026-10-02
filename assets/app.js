@@ -1,3 +1,5 @@
+/* global document, window */
+
 const DATA_ROOT = './data';
 const PUBLIC_ROOT = 'https://iran-market.github.io/data';
 const POPULAR_SYMBOLS = new Set(['USD_IRR_FREE', 'GOLD_18K_IRR', 'COIN_EMAMI_IRR', 'USDT_IRR', 'EUR_IRR_FREE', 'GBP_IRR_FREE']);
@@ -12,6 +14,11 @@ const state = {
   history: new Map(),
   endpoint: 'popular',
   language: 'js',
+  symbols: [],
+  symbolQuery: '',
+  symbolCategory: 'all',
+  symbolLiveOnly: true,
+  symbolLimit: 80,
 };
 
 const $ = (selector, root = document) => root.querySelector(selector);
@@ -60,7 +67,9 @@ function iconFor(symbol) {
 
 function categoryMatches(item, category) {
   if (category === 'popular') return POPULAR_SYMBOLS.has(item.symbol);
-  if (category === 'gold') return item.category === 'gold' || item.category === 'coin';
+  if (category === 'all') return true;
+  if (category === 'gold') return ['gold', 'coin', 'precious_metal'].includes(item.category);
+  if (category === 'commodity') return ['commodity', 'energy', 'index'].includes(item.category);
   return item.category === category;
 }
 
@@ -120,6 +129,88 @@ async function loadMarkets() {
     $('#result-count').textContent = 'خطا در دریافت داده';
     $('#freshness span:last-child').textContent = 'ارتباط با فایل داده برقرار نشد';
     console.error('market data load failed', error);
+  }
+}
+
+const categoryNames = {
+  currency: 'ارز',
+  gold: 'طلا',
+  coin: 'سکه',
+  precious_metal: 'فلز گران‌بها',
+  crypto: 'رمزارز',
+  commodity: 'کالا',
+  energy: 'انرژی',
+  index: 'شاخص',
+  stock: 'سهام',
+  fund: 'صندوق',
+  bond: 'اوراق',
+  economic_indicator: 'شاخص اقتصادی',
+  other: 'سایر',
+};
+
+function categoryName(category) {
+  return categoryNames[category] ?? category;
+}
+
+function filteredSymbols() {
+  const query = state.symbolQuery.trim().toLocaleLowerCase('fa');
+  return state.symbols.filter((item) => {
+    if (state.symbolLiveOnly && !item.has_latest) return false;
+    if (state.symbolCategory !== 'all' && item.category !== state.symbolCategory) return false;
+    const haystack = `${item.symbol} ${item.name_fa ?? ''} ${item.name_en ?? ''}`.toLocaleLowerCase('fa');
+    return !query || haystack.includes(query);
+  });
+}
+
+function symbolRow(item) {
+  const name = item.name_fa || item.name_en;
+  const unit = item.currency === 'IRR' ? 'ریال' : item.currency;
+  const latest = item.has_latest
+    ? '<a class="data-badge live" href="data/latest.json">قیمت فعلی</a>'
+    : '<span class="data-badge muted">بدون قیمت فعلی</span>';
+  const history = item.history_file
+    ? ` <a class="data-badge history" href="data/${escapeHtml(item.history_file)}">تاریخچه</a>`
+    : '';
+  return `<tr>
+    <td><code>${escapeHtml(item.symbol)}</code></td>
+    <td>${name ? escapeHtml(name) : '<span class="unresolved-name">نام حل‌نشده</span>'}</td>
+    <td>${escapeHtml(categoryName(item.category))}</td>
+    <td><span dir="ltr">${escapeHtml(unit)}</span></td>
+    <td>${latest}${history}</td>
+  </tr>`;
+}
+
+function renderSymbols() {
+  const items = filteredSymbols();
+  const visible = items.slice(0, state.symbolLimit);
+  $('#symbols-body').innerHTML = visible.length
+    ? visible.map(symbolRow).join('')
+    : '<tr><td colspan="5">نمادی با این فیلتر پیدا نشد.</td></tr>';
+  $('#symbol-summary').textContent = `${faNumber.format(items.length)} شناسه مطابق فیلتر؛ ${faNumber.format(state.symbols.filter((item) => item.has_latest).length)} شناسه دارای قیمت فعلی`;
+  $('#symbols-more').hidden = visible.length >= items.length;
+}
+
+async function loadSymbols() {
+  try {
+    const payload = await json(`${DATA_ROOT}/symbols.json`);
+    state.symbols = [...(payload.data ?? [])].sort((a, b) => {
+      const aNamed = Boolean(a.name_fa || a.name_en);
+      const bNamed = Boolean(b.name_fa || b.name_en);
+      if (aNamed !== bNamed) return aNamed ? -1 : 1;
+      return a.category.localeCompare(b.category) || a.symbol.localeCompare(b.symbol);
+    });
+    const select = $('#symbol-category');
+    const categories = [...new Set(state.symbols.map((item) => item.category))].sort();
+    select.insertAdjacentHTML(
+      'beforeend',
+      categories.map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(categoryName(category))}</option>`).join(''),
+    );
+    renderSymbols();
+  } catch (error) {
+    $('#symbols-body').innerHTML = '<tr><td colspan="5">دریافت راهنمای نمادها موقتاً ممکن نیست.</td></tr>';
+    $('#symbol-summary').textContent = 'خطا در دریافت symbols.json';
+    $('#symbols-more').hidden = true;
+    console.error('symbol catalog load failed', error);
   }
 }
 
@@ -223,6 +314,7 @@ function chartHover(event) {
 const endpointPaths = {
   popular: 'popular.json',
   latest: 'latest-toman.json',
+  symbols: 'symbols.json',
   usd: 'history/USD_IRR_FREE.json',
   gold: 'history/GOLD_18K_IRR.json',
 };
@@ -246,6 +338,25 @@ function bindEvents() {
     renderMarket();
   }));
   $('#market-search').addEventListener('input', (event) => { state.query = event.target.value; renderMarket(); });
+  $('#symbol-search').addEventListener('input', (event) => {
+    state.symbolQuery = event.target.value;
+    state.symbolLimit = 80;
+    renderSymbols();
+  });
+  $('#symbol-category').addEventListener('change', (event) => {
+    state.symbolCategory = event.target.value;
+    state.symbolLimit = 80;
+    renderSymbols();
+  });
+  $('#symbol-live-only').addEventListener('change', (event) => {
+    state.symbolLiveOnly = event.target.checked;
+    state.symbolLimit = 80;
+    renderSymbols();
+  });
+  $('#symbols-more').addEventListener('click', () => {
+    state.symbolLimit += 80;
+    renderSymbols();
+  });
   $('#history-symbol').addEventListener('change', (event) => loadHistory(event.target.value));
   $$('.chart-range button').forEach((button) => button.addEventListener('click', () => {
     $$('.chart-range button').forEach((item) => item.classList.remove('active'));
@@ -272,4 +383,5 @@ function bindEvents() {
 bindEvents();
 renderUsage();
 loadMarkets();
+loadSymbols();
 loadHistory(state.historySymbol);

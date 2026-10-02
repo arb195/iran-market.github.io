@@ -43,6 +43,11 @@
           {
             "@type": "DataDownload",
             "encodingFormat": "application/json",
+            "contentUrl": "https://iran-market.github.io/data/symbols.json"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "application/json",
             "contentUrl": "https://iran-market.github.io/data/latest-toman.json"
           },
           {
@@ -67,6 +72,7 @@
       </a>
       <nav aria-label="منوی اصلی">
         <a href="#prices">قیمت‌ها</a>
+        <a href="#symbols">راهنمای نمادها</a>
         <a href="#history">تاریخچه</a>
         <a href="#docs">راهنما</a>
         <a class="github-link" href="https://github.com/iran-market/iran-market.github.io">GitHub ↗</a>
@@ -130,9 +136,11 @@ console.log(usd.price); <span class="code-comment">// تومان</span></code></
         </div>
         <div class="tabs" role="tablist" aria-label="دسته بازار">
           <button class="tab active" data-category="popular" role="tab">منتخب</button>
+          <button class="tab" data-category="all" role="tab">همه</button>
           <button class="tab" data-category="currency" role="tab">ارز</button>
-          <button class="tab" data-category="gold" role="tab">طلا و سکه</button>
+          <button class="tab" data-category="gold" role="tab">طلا، سکه و فلزات</button>
           <button class="tab" data-category="crypto" role="tab">رمزارز</button>
+          <button class="tab" data-category="commodity" role="tab">انرژی و کالا</button>
         </div>
         <div class="market-grid" id="market-grid" aria-live="polite">
           <div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>
@@ -140,6 +148,40 @@ console.log(usd.price); <span class="code-comment">// تومان</span></code></
         <div class="section-foot">
           <span id="result-count">در حال بارگذاری…</span>
           <a href="data/latest-toman.json">دریافت همهٔ قیمت‌ها ←</a>
+        </div>
+      </section>
+
+      <section class="section symbols-section" id="symbols">
+        <div class="shell">
+          <div class="section-heading symbols-heading">
+            <div>
+              <span class="kicker">SYMBOL DIRECTORY</span>
+              <h2>راهنمای کامل شناسه‌ها</h2>
+              <p>نام‌ها و دسته‌بندی‌ها مستقیماً از دادهٔ مرجع ساخته می‌شوند؛ موارد حل‌نشده بدون نام نمایش داده می‌شوند، نه با حدس.</p>
+            </div>
+            <a class="button ghost" href="data/symbols.json">دریافت symbols.json</a>
+          </div>
+          <div class="symbol-tools">
+            <label class="search-box symbol-search">
+              <span aria-hidden="true">⌕</span>
+              <input id="symbol-search" type="search" placeholder="نام یا شناسه؛ مثال USD_IRR_FREE" autocomplete="off" />
+            </label>
+            <select id="symbol-category" aria-label="فیلتر دسته نماد">
+              <option value="all">همهٔ دسته‌ها</option>
+            </select>
+            <label class="availability-filter"><input id="symbol-live-only" type="checkbox" checked /> فقط دارای قیمت فعلی</label>
+          </div>
+          <div class="symbol-summary" id="symbol-summary">در حال دریافت فهرست نمادها…</div>
+          <div class="symbols-table-wrap">
+            <table class="symbols-table">
+              <thead><tr><th>شناسه</th><th>نام معتبر</th><th>دسته</th><th>واحد قیمت</th><th>دسترسی</th></tr></thead>
+              <tbody id="symbols-body"><tr><td colspan="5">در حال بارگذاری…</td></tr></tbody>
+            </table>
+          </div>
+          <div class="symbols-actions">
+            <button class="button ghost" id="symbols-more" type="button">نمایش موارد بیشتر</button>
+            <a href="https://github.com/iran-market/iran-market.github.io/blob/main/SYMBOLS.md">توضیح قواعد شناسه‌ها در GitHub ←</a>
+          </div>
         </div>
       </section>
 
@@ -174,6 +216,7 @@ console.log(usd.price); <span class="code-comment">// تومان</span></code></
           <aside class="endpoint-list" aria-label="فایل‌های قابل دریافت">
             <button class="endpoint active" data-endpoint="popular"><b>قیمت‌های منتخب</b><code>/data/popular.json</code></button>
             <button class="endpoint" data-endpoint="latest"><b>همه قیمت‌ها</b><code>/data/latest-toman.json</code></button>
+            <button class="endpoint" data-endpoint="symbols"><b>راهنمای نمادها</b><code>/data/symbols.json</code></button>
             <button class="endpoint" data-endpoint="usd"><b>تاریخچه دلار</b><code>/data/history/USD_IRR_FREE.json</code></button>
             <button class="endpoint" data-endpoint="gold"><b>تاریخچه طلا</b><code>/data/history/GOLD_18K_IRR.json</code></button>
           </aside>
@@ -184,7 +227,7 @@ console.log(usd.price); <span class="code-comment">// تومان</span></code></
           </div>
         </div>
         <div class="feature-grid">
-          <article><span>01</span><h3>ساختار پایدار</h3><p>نمادهای canonical و فیلدهای مشخص؛ مناسب cache، نمودار و تحلیل.</p></article>
+          <article><span>01</span><h3>شناسه‌های پایدار</h3><p>فهرست ماشین‌خوان، نام‌های منبع‌محور و فیلدهای مشخص؛ مناسب cache، نمودار و تحلیل.</p></article>
           <article><span>02</span><h3>زمان فارسی و UTC</h3><p>timestamp استاندارد در کنار تاریخ و ساعت تهران و تاریخ جلالی.</p></article>
           <article><span>03</span><h3>تاریخچهٔ OHLC</h3><p>کندل روزانه با open، high، low و close؛ مرتب‌شده برای پردازش مستقیم.</p></article>
         </div>
@@ -205,7 +248,7 @@ console.log(usd.price); <span class="code-comment">// تومان</span></code></
       <div class="shell footer-grid">
         <div class="brand"><span class="brand-mark">IM</span><span><b>Iran Market</b><small>Free & open JSON data</small></span></div>
         <p>داده‌ها صرفاً جهت اطلاع‌رسانی‌اند و توصیهٔ خرید یا فروش نیستند.</p>
-        <div><a href="https://github.com/iran-market/iran-market.github.io">GitHub</a><a href="https://imapi.cloudflarezone.net/docs">Core API</a></div>
+        <div><a href="https://github.com/iran-market/iran-market.github.io">GitHub</a><a href="#symbols">Symbols</a></div>
       </div>
     </footer>
     <div class="toast" id="toast" role="status">کپی شد</div>
