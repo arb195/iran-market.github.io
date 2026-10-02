@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-02T05:30:01.319Z",
+  "generated_at": "2026-10-02T05:56:34.562Z",
   "update_frequency_minutes": 30,
-  "source": "Iran Market API Core / TGJU",
+  "source": "TGJU",
   "license_note": "Market data belongs to its original providers; verify before financial use.",
   "files": [
     {
@@ -51,7 +51,14 @@
       "path": "history/USDT_IRR.json",
       "url": "https://iran-market.github.io/data/history/USDT_IRR.json",
       "description": "Daily OHLC history for USDT_IRR in toman",
-      "records": 46,
+      "records": 47,
+      "unit": "toman"
+    },
+    {
+      "path": "symbols.json",
+      "url": "https://iran-market.github.io/data/symbols.json",
+      "description": "Canonical symbol guide with verified names, categories and availability",
+      "records": 1350,
       "unit": "toman"
     }
   ]

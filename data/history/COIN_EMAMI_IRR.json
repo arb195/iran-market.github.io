@@ -53677,13 +53677,12 @@
   "meta": {
     "symbol": "COIN_EMAMI_IRR",
     "interval": "1d",
-    "source": "tgju",
+    "source": "TGJU",
     "unit": "toman",
     "count": 4127,
     "next_cursor": null,
-    "published_at": "2026-10-02T05:30:01.319Z",
+    "published_at": "2026-10-02T05:56:34.562Z",
     "update_frequency_minutes": 30,
-    "public_file": "https://iran-market.github.io/data/history/COIN_EMAMI_IRR.json",
-    "upstream": "Iran Market API Core / TGJU"
+    "public_file": "https://iran-market.github.io/data/history/COIN_EMAMI_IRR.json"
   }
 }

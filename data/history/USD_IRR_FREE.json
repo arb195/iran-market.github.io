@@ -51578,13 +51578,12 @@
   "meta": {
     "symbol": "USD_IRR_FREE",
     "interval": "1d",
-    "source": "tgju",
+    "source": "TGJU",
     "unit": "toman",
     "count": 3966,
     "next_cursor": null,
-    "published_at": "2026-10-02T05:30:01.319Z",
+    "published_at": "2026-10-02T05:56:34.562Z",
     "update_frequency_minutes": 30,
-    "public_file": "https://iran-market.github.io/data/history/USD_IRR_FREE.json",
-    "upstream": "Iran Market API Core / TGJU"
+    "public_file": "https://iran-market.github.io/data/history/USD_IRR_FREE.json"
   }
 }
