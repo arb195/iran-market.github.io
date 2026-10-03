@@ -1,6 +1,6 @@
 {
   "meta": {
-    "published_at": "2026-10-03T18:00:01.408Z",
+    "published_at": "2026-10-03T18:30:01.521Z",
     "update_frequency_minutes": 1440,
     "source": "TGJU",
     "total": 128,
@@ -716,11 +716,11 @@
       "category": "gold",
       "file": "history/GOLD_17_COIN.json",
       "url": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/GOLD_17_COIN.json",
-      "records": 2197,
+      "records": 2198,
       "currency": "IRT",
       "from": "2018-03-17T20:30:00.000Z",
-      "to": "2026-09-30T20:30:00.000Z",
-      "history_published_at": "2026-10-02T11:34:49.702Z"
+      "to": "2026-10-02T20:30:00.000Z",
+      "history_published_at": "2026-10-03T08:46:07.830Z"
     },
     {
       "symbol": "GOLD_MELTED_TRANSFER",
@@ -729,11 +729,11 @@
       "category": "gold",
       "file": "history/GOLD_MELTED_TRANSFER.json",
       "url": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/GOLD_MELTED_TRANSFER.json",
-      "records": 1672,
+      "records": 1673,
       "currency": "IRT",
       "from": "2017-04-06T19:30:00.000Z",
-      "to": "2026-09-30T20:30:00.000Z",
-      "history_published_at": "2026-10-02T11:34:49.702Z"
+      "to": "2026-10-02T20:30:00.000Z",
+      "history_published_at": "2026-10-03T08:46:07.830Z"
     },
     {
       "symbol": "USDT_IRR",
@@ -872,11 +872,11 @@
       "category": "crypto",
       "file": "history/DASH_USD.json",
       "url": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/DASH_USD.json",
-      "records": 4613,
+      "records": 4614,
       "currency": "USD",
       "from": "2014-02-13T20:30:00.000Z",
-      "to": "2026-10-01T20:30:00.000Z",
-      "history_published_at": "2026-10-02T11:34:49.702Z"
+      "to": "2026-10-02T20:30:00.000Z",
+      "history_published_at": "2026-10-03T08:46:07.830Z"
     },
     {
       "symbol": "XMR_USD",
@@ -885,11 +885,11 @@
       "category": "crypto",
       "file": "history/XMR_USD.json",
       "url": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/XMR_USD.json",
-      "records": 4516,
+      "records": 4517,
       "currency": "USD",
       "from": "2014-05-20T19:30:00.000Z",
-      "to": "2026-10-01T20:30:00.000Z",
-      "history_published_at": "2026-10-02T11:34:49.702Z"
+      "to": "2026-10-02T20:30:00.000Z",
+      "history_published_at": "2026-10-03T18:30:01.521Z"
     },
     {
       "symbol": "XLM_USD",
