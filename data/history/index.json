@@ -1,6 +1,6 @@
 {
   "meta": {
-    "published_at": "2026-10-03T12:30:01.359Z",
+    "published_at": "2026-10-03T13:00:01.258Z",
     "update_frequency_minutes": 1440,
     "source": "TGJU",
     "total": 128,
@@ -1288,11 +1288,11 @@
       "category": "commodity",
       "file": "history/COMMODITY_CORN.json",
       "url": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/COMMODITY_CORN.json",
-      "records": 4037,
+      "records": 4038,
       "currency": "USD",
       "from": "2011-01-02T20:30:00.000Z",
-      "to": "2026-10-01T20:30:00.000Z",
-      "history_published_at": "2026-10-02T11:06:24.688Z"
+      "to": "2026-10-02T20:30:00.000Z",
+      "history_published_at": "2026-10-03T13:00:01.258Z"
     },
     {
       "symbol": "COMMODITY_LONDON_WHEAT",
@@ -1305,7 +1305,7 @@
       "currency": "USD",
       "from": "2011-01-02T20:30:00.000Z",
       "to": "2026-10-01T20:30:00.000Z",
-      "history_published_at": "2026-10-02T11:06:24.688Z"
+      "history_published_at": "2026-10-03T13:00:01.258Z"
     },
     {
       "symbol": "COMMODITY_US_WHEAT",
@@ -1314,11 +1314,11 @@
       "category": "commodity",
       "file": "history/COMMODITY_US_WHEAT.json",
       "url": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/COMMODITY_US_WHEAT.json",
-      "records": 4134,
+      "records": 4135,
       "currency": "USD",
       "from": "2011-01-02T20:30:00.000Z",
-      "to": "2026-10-01T20:30:00.000Z",
-      "history_published_at": "2026-10-02T11:06:24.688Z"
+      "to": "2026-10-02T20:30:00.000Z",
+      "history_published_at": "2026-10-03T13:00:01.258Z"
     },
     {
       "symbol": "COMMODITY_ROUGH_RICE",
@@ -1327,11 +1327,11 @@
       "category": "commodity",
       "file": "history/COMMODITY_ROUGH_RICE.json",
       "url": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/COMMODITY_ROUGH_RICE.json",
-      "records": 3993,
+      "records": 3994,
       "currency": "USD",
       "from": "2011-01-02T20:30:00.000Z",
-      "to": "2026-10-01T20:30:00.000Z",
-      "history_published_at": "2026-10-02T11:06:24.688Z"
+      "to": "2026-10-02T20:30:00.000Z",
+      "history_published_at": "2026-10-03T13:00:01.258Z"
     },
     {
       "symbol": "COMMODITY_SOYBEANS",
