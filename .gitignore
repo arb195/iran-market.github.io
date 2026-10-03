@@ -6,3 +6,5 @@
 node_modules/
 *.log
 .DS_Store
+# Atomic publisher staging files must never be published as market data.
+data/**/*.tmp-*
