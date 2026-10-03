@@ -1,6 +1,6 @@
 {
   "meta": {
-    "published_at": "2026-10-03T08:55:32.027Z",
+    "published_at": "2026-10-03T09:00:01.311Z",
     "update_frequency_minutes": 1440,
     "source": "TGJU",
     "total": 128,
@@ -131,11 +131,11 @@
       "category": "currency",
       "file": "history/IQD_IRR_FREE.json",
       "url": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/IQD_IRR_FREE.json",
-      "records": 2838,
+      "records": 2839,
       "currency": "IRT",
       "from": "2014-07-22T19:30:00.000Z",
-      "to": "2026-09-30T20:30:00.000Z",
-      "history_published_at": "2026-10-02T11:06:24.688Z"
+      "to": "2026-10-02T20:30:00.000Z",
+      "history_published_at": "2026-10-03T08:44:40.669Z"
     },
     {
       "symbol": "AUD_IRR_FREE",
@@ -352,11 +352,11 @@
       "category": "gold",
       "file": "history/GOLD_24K_IRR.json",
       "url": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/GOLD_24K_IRR.json",
-      "records": 3377,
+      "records": 3378,
       "currency": "IRT",
       "from": "2014-05-01T19:30:00.000Z",
-      "to": "2026-09-30T20:30:00.000Z",
-      "history_published_at": "2026-10-02T11:06:24.688Z"
+      "to": "2026-10-02T20:30:00.000Z",
+      "history_published_at": "2026-10-03T08:44:40.669Z"
     },
     {
       "symbol": "GOLD_USED_IRR",
@@ -365,11 +365,11 @@
       "category": "gold",
       "file": "history/GOLD_USED_IRR.json",
       "url": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/GOLD_USED_IRR.json",
-      "records": 2198,
+      "records": 2199,
       "currency": "IRT",
       "from": "2018-03-16T20:30:00.000Z",
-      "to": "2026-09-30T20:30:00.000Z",
-      "history_published_at": "2026-10-02T11:06:24.688Z"
+      "to": "2026-10-02T20:30:00.000Z",
+      "history_published_at": "2026-10-03T08:44:40.669Z"
     },
     {
       "symbol": "GOLD_MESGHAL_IRR",
@@ -378,11 +378,11 @@
       "category": "gold",
       "file": "history/GOLD_MESGHAL_IRR.json",
       "url": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/GOLD_MESGHAL_IRR.json",
-      "records": 3520,
+      "records": 3521,
       "currency": "IRT",
       "from": "2013-07-21T19:30:00.000Z",
-      "to": "2026-09-30T20:30:00.000Z",
-      "history_published_at": "2026-10-02T11:06:24.688Z"
+      "to": "2026-10-02T20:30:00.000Z",
+      "history_published_at": "2026-10-03T08:44:40.669Z"
     },
     {
       "symbol": "XAU_USD",
