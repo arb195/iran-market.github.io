@@ -52998,13 +52998,13 @@
     {
       "t": "2026-10-01T20:30:00.000Z",
       "t_tehran": "2026-10-02T00:00:00+03:30",
-      "open": 3734.33,
-      "high": 3740.4,
-      "low": 3717.85,
-      "close": 3721.7,
+      "open": 3738.3,
+      "high": 3751.08,
+      "low": 3693,
+      "close": 3698.35,
       "volume": null,
-      "ticks": 12,
-      "origin": "derived",
+      "ticks": 20,
+      "origin": "source",
       "quality": [],
       "date_jalali": "1405/07/10"
     }
@@ -53016,7 +53016,7 @@
     "unit": "toman",
     "count": 3940,
     "next_cursor": null,
-    "published_at": "2026-10-02T11:07:24.635Z",
+    "published_at": "2026-10-03T14:30:01.395Z",
     "update_frequency_minutes": 1440,
     "public_file": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/BASE_GLOBAL_ZINC.json",
     "currency": "USD"
