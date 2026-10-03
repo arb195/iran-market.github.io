@@ -1,6 +1,6 @@
 {
   "meta": {
-    "published_at": "2026-10-03T05:30:01.462Z",
+    "published_at": "2026-10-03T08:49:48.764Z",
     "update_frequency_minutes": 1440,
     "source": "TGJU",
     "total": 128,
@@ -14,11 +14,11 @@
       "category": "currency",
       "file": "history/USD_IRR_FREE.json",
       "url": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/USD_IRR_FREE.json",
-      "records": 3966,
+      "records": 3967,
       "currency": "IRT",
       "from": "2011-11-25T20:30:00.000Z",
-      "to": "2026-09-30T20:30:00.000Z",
-      "history_published_at": "2026-10-02T11:00:01.431Z"
+      "to": "2026-10-02T20:30:00.000Z",
+      "history_published_at": "2026-10-03T08:44:40.669Z"
     },
     {
       "symbol": "EUR_IRR_FREE",
@@ -339,11 +339,11 @@
       "category": "gold",
       "file": "history/GOLD_18K_IRR.json",
       "url": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/GOLD_18K_IRR.json",
-      "records": 3518,
+      "records": 3519,
       "currency": "IRT",
       "from": "2013-07-21T19:30:00.000Z",
-      "to": "2026-09-30T20:30:00.000Z",
-      "history_published_at": "2026-10-02T11:00:01.431Z"
+      "to": "2026-10-02T20:30:00.000Z",
+      "history_published_at": "2026-10-03T08:44:40.669Z"
     },
     {
       "symbol": "GOLD_24K_IRR",
@@ -456,11 +456,11 @@
       "category": "coin",
       "file": "history/COIN_EMAMI_IRR.json",
       "url": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/COIN_EMAMI_IRR.json",
-      "records": 4127,
+      "records": 4128,
       "currency": "IRT",
       "from": "2010-12-31T20:30:00.000Z",
-      "to": "2026-09-30T20:30:00.000Z",
-      "history_published_at": "2026-10-02T11:00:01.431Z"
+      "to": "2026-10-02T20:30:00.000Z",
+      "history_published_at": "2026-10-03T08:45:38.018Z"
     },
     {
       "symbol": "COIN_BAHAR_IRR",
@@ -742,11 +742,11 @@
       "category": "crypto",
       "file": "history/USDT_IRR.json",
       "url": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/USDT_IRR.json",
-      "records": 2064,
+      "records": 2065,
       "currency": "IRT",
       "from": "2020-09-15T19:30:00.000Z",
-      "to": "2026-10-01T20:30:00.000Z",
-      "history_published_at": "2026-10-02T11:00:01.431Z"
+      "to": "2026-10-02T20:30:00.000Z",
+      "history_published_at": "2026-10-03T08:46:07.830Z"
     },
     {
       "symbol": "BTC_USD",

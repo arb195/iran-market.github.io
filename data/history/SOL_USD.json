@@ -30772,15 +30772,28 @@
     {
       "t": "2026-10-01T20:30:00.000Z",
       "t_tehran": "2026-10-02T00:00:00+03:30",
-      "open": 118.42,
-      "high": 122.6,
-      "low": 118.42,
-      "close": 121.89,
+      "open": 118.27,
+      "high": 123.46,
+      "low": 117.5,
+      "close": 118.17,
       "volume": null,
-      "ticks": 12,
-      "origin": "derived",
+      "ticks": 22,
+      "origin": "source",
       "quality": [],
       "date_jalali": "1405/07/10"
+    },
+    {
+      "t": "2026-10-02T20:30:00.000Z",
+      "t_tehran": "2026-10-03T00:00:00+03:30",
+      "open": 118.14,
+      "high": 119.69,
+      "low": 117.89,
+      "close": 119.25,
+      "volume": null,
+      "ticks": 13,
+      "origin": "derived",
+      "quality": [],
+      "date_jalali": "1405/07/11"
     }
   ],
   "meta": {
@@ -30788,9 +30801,9 @@
     "interval": "1d",
     "source": "TGJU",
     "unit": "toman",
-    "count": 2366,
+    "count": 2367,
     "next_cursor": null,
-    "published_at": "2026-10-02T11:06:24.688Z",
+    "published_at": "2026-10-03T08:46:07.830Z",
     "update_frequency_minutes": 1440,
     "public_file": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/SOL_USD.json",
     "currency": "USD"
