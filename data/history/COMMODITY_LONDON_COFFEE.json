@@ -52505,13 +52505,13 @@
     {
       "t": "2026-10-01T20:30:00.000Z",
       "t_tehran": "2026-10-02T00:00:00+03:30",
-      "open": 3497.3,
-      "high": 3519.3,
-      "low": 3487.3,
-      "close": 3519.3,
+      "open": 3485.3,
+      "high": 3546.3,
+      "low": 3439.3,
+      "close": 3439.3,
       "volume": null,
-      "ticks": 3,
-      "origin": "derived",
+      "ticks": 11,
+      "origin": "source",
       "quality": [],
       "date_jalali": "1405/07/10"
     }
@@ -52523,7 +52523,7 @@
     "unit": "toman",
     "count": 4003,
     "next_cursor": null,
-    "published_at": "2026-10-02T11:06:24.688Z",
+    "published_at": "2026-10-03T12:00:01.386Z",
     "update_frequency_minutes": 1440,
     "public_file": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/COMMODITY_LONDON_COFFEE.json",
     "currency": "USD"

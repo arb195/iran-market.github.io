@@ -1,6 +1,6 @@
 {
   "meta": {
-    "published_at": "2026-10-03T11:30:01.490Z",
+    "published_at": "2026-10-03T12:00:01.386Z",
     "update_frequency_minutes": 1440,
     "source": "TGJU",
     "total": 128,
@@ -1184,11 +1184,11 @@
       "category": "energy",
       "file": "history/ENERGY_NATURAL_GAS.json",
       "url": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/ENERGY_NATURAL_GAS.json",
-      "records": 4135,
+      "records": 4136,
       "currency": "USD",
       "from": "2011-01-02T20:30:00.000Z",
-      "to": "2026-10-01T20:30:00.000Z",
-      "history_published_at": "2026-10-02T11:06:24.688Z"
+      "to": "2026-10-02T20:30:00.000Z",
+      "history_published_at": "2026-10-03T12:00:01.386Z"
     },
     {
       "symbol": "OPEC_BASKET_USD",
@@ -1197,11 +1197,11 @@
       "category": "energy",
       "file": "history/OPEC_BASKET_USD.json",
       "url": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/OPEC_BASKET_USD.json",
-      "records": 2592,
+      "records": 2593,
       "currency": "USD",
       "from": "2015-03-06T20:30:00.000Z",
-      "to": "2026-10-01T20:30:00.000Z",
-      "history_published_at": "2026-10-02T11:06:24.688Z"
+      "to": "2026-10-02T20:30:00.000Z",
+      "history_published_at": "2026-10-03T12:00:01.386Z"
     },
     {
       "symbol": "ENERGY_GASOLINE_RBOB",
@@ -1210,11 +1210,11 @@
       "category": "energy",
       "file": "history/ENERGY_GASOLINE_RBOB.json",
       "url": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/ENERGY_GASOLINE_RBOB.json",
-      "records": 4086,
+      "records": 4087,
       "currency": "USD",
       "from": "2011-01-02T20:30:00.000Z",
-      "to": "2026-10-01T20:30:00.000Z",
-      "history_published_at": "2026-10-02T11:06:24.688Z"
+      "to": "2026-10-02T20:30:00.000Z",
+      "history_published_at": "2026-10-03T12:00:01.386Z"
     },
     {
       "symbol": "COMMODITY_LONDON_COFFEE",
@@ -1227,7 +1227,7 @@
       "currency": "USD",
       "from": "2011-01-02T20:30:00.000Z",
       "to": "2026-10-01T20:30:00.000Z",
-      "history_published_at": "2026-10-02T11:06:24.688Z"
+      "history_published_at": "2026-10-03T12:00:01.386Z"
     },
     {
       "symbol": "COMMODITY_US_COFFEE_C",
