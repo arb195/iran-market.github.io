@@ -60322,7 +60322,7 @@
       "close": 1700,
       "volume": null,
       "ticks": 4,
-      "origin": "derived",
+      "origin": "source",
       "quality": [],
       "date_jalali": "1405/07/11"
     }
@@ -60334,7 +60334,7 @@
     "unit": "toman",
     "count": 4634,
     "next_cursor": null,
-    "published_at": "2026-10-03T08:45:38.018Z",
+    "published_at": "2026-10-04T09:00:01.334Z",
     "update_frequency_minutes": 1440,
     "public_file": "https://raw.githubusercontent.com/iran-market/iran-market.github.io/main/data/history/PLATINUM.json",
     "currency": "USD"
